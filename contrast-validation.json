@@ -1,0 +1,62 @@
+[
+  {
+    "file": "about/index.html",
+    "failures": []
+  },
+  {
+    "file": "experience/index.html",
+    "failures": []
+  },
+  {
+    "file": "index.html",
+    "failures": []
+  },
+  {
+    "file": "leadership/index.html",
+    "failures": []
+  },
+  {
+    "file": "military/index.html",
+    "failures": []
+  },
+  {
+    "file": "projects/index.html",
+    "failures": []
+  },
+  {
+    "file": "projects/investigation-correlation-platform/index.html",
+    "failures": []
+  },
+  {
+    "file": "projects/kubernetes-operations-console/index.html",
+    "failures": []
+  },
+  {
+    "file": "projects/pcap-analyzer/index.html",
+    "failures": []
+  },
+  {
+    "file": "projects/private-ai-knowledge-platform/index.html",
+    "failures": []
+  },
+  {
+    "file": "projects/security-assessment-platform/index.html",
+    "failures": []
+  },
+  {
+    "file": "projects/windows-diagnostic-toolkit/index.html",
+    "failures": []
+  },
+  {
+    "file": "resume/index.html",
+    "failures": []
+  },
+  {
+    "file": "skills/index.html",
+    "failures": []
+  },
+  {
+    "file": "training/index.html",
+    "failures": []
+  }
+]

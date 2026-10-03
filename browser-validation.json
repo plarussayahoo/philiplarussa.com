@@ -1,0 +1,306 @@
+{
+  "results": [
+    {
+      "file": "about/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "About | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "experience/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Experience | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Philip Larussa | Technology Leadership, Cybersecurity & Engineering",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "leadership/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Leadership | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "military/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Military Service | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Projects | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/investigation-correlation-platform/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Investigation & Correlation Platform | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/kubernetes-operations-console/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Kubernetes Operations Console | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/pcap-analyzer/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "PCAP Analyzer | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/private-ai-knowledge-platform/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Private AI Knowledge Platform | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/security-assessment-platform/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Security Assessment Platform | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/windows-diagnostic-toolkit/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Windows Diagnostic Toolkit | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "resume/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Resume | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "skills/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Skills | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "training/index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Learning & Innovation | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "about/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "About | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "experience/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Experience | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Philip Larussa | Technology Leadership, Cybersecurity & Engineering",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "leadership/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Leadership | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "military/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Military Service | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Projects | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/investigation-correlation-platform/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Investigation & Correlation Platform | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/kubernetes-operations-console/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Kubernetes Operations Console | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/pcap-analyzer/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "PCAP Analyzer | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/private-ai-knowledge-platform/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Private AI Knowledge Platform | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/security-assessment-platform/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Security Assessment Platform | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "projects/windows-diagnostic-toolkit/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Windows Diagnostic Toolkit | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "resume/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Resume | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "skills/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Skills | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    },
+    {
+      "file": "training/index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Learning & Innovation | Philip Larussa",
+      "overflow": false,
+      "h1": 1,
+      "main": 1,
+      "nav": true
+    }
+  ],
+  "errors": [],
+  "linksChecked": 43
+}

@@ -10,30 +10,23 @@
           content="Resume of Philip Larussa — technology leader specializing in infrastructure, cybersecurity, cloud, identity, networking, engineering and automation.">
 
     <link rel="stylesheet" href="../css/style.css">
-</head>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"></head>
 
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
 <div class="container nav-container">
 
 <a class="brand" href="../">PHILIP <span>LARUSSA</span></a>
 
-<nav>
-<a href="../about/">About</a>
-<a href="../experience/">Experience</a>
-<a href="../projects/">Projects</a>
-<a href="../skills/">Skills</a>
-<a href="../training/">Training</a>
-<a href="../military/">Military</a>
-<a href="../resume/">Resume</a>
-</nav>
+<nav aria-label="Primary"><a href="../">Home</a><a href="../leadership/">Leadership</a><a href="../projects/">Technical</a><a href="../experience/">Experience</a><a href="../training/">Learning</a><a href="../about/">About</a><a href="../resume/" aria-current="page">Resume</a></nav>
 
 </div>
 </header>
 
 
-<main>
+<main id="main">
 
 <!-- HERO -->
 
@@ -321,8 +314,7 @@ modern federation protocols.
 <span>CLOUD</span>
 <h3>Microsoft 365 & Exchange Online</h3>
 <p>
-Migration of enterprise messaging from on-premises
-Exchange infrastructure to Microsoft cloud services.
+End-to-end technical and project leadership of enterprise messaging migration from on-premises Exchange to Microsoft 365, using controlled mailbox migration waves to maintain business continuity.
 </p>
 </div>
 
@@ -539,19 +531,12 @@ Navy & Marine Corps Achievement Medal ×2
 </section>
 
 
-<!-- EDUCATION + TRAINING -->
-
-<section class="section">
+<!-- EDUCATION -->
+<section class="section" aria-labelledby="resume-education-heading">
 <div class="container">
-
-<div class="resume-two-column">
-
-
-<div>
-
 <p class="section-label">EDUCATION</p>
 
-<h2>University of Texas at Arlington</h2>
+<h2 id="resume-education-heading">University of Texas at Arlington</h2>
 
 <p class="resume-subtitle">
 Electrical Engineering — Undergraduate Coursework
@@ -560,15 +545,15 @@ Electrical Engineering — Undergraduate Coursework
 <p class="resume-date">
 2012 — 2013
 </p>
-
 </div>
+</section>
 
-
-<div>
-
+<!-- ADVANCED TRAINING -->
+<section class="section alt" aria-labelledby="resume-training-heading">
+<div class="container">
 <p class="section-label">ADVANCED TRAINING</p>
 
-<h2>Selected Security Training</h2>
+<h2 id="resume-training-heading">Selected Security Training</h2>
 
 <div class="resume-training">
 
@@ -598,14 +583,8 @@ Advanced Infrastructure Hacking — 2019
 <p>
 <a href="../training/">View training history →</a>
 </p>
-
-</div>
-
-
-</div>
 </div>
 </section>
-
 
 <!-- TECH -->
 
@@ -692,7 +671,7 @@ Semantic Search • AI-Assisted Analysis
 </div>
 
 </div>
-</footer>
+<div class="container footer-links"><a href="../skills/">Skills &amp; evidence</a><a href="../military/">Military service</a><a href="../resume/">Resume</a></div></footer>
 
 </body>
 </html>
