@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Philip Larussa</title>
+
+    <meta name="description"
+          content="Engineering, cybersecurity, infrastructure, cloud, AI and automation projects by Philip Larussa.">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+
+        <a class="brand" href="../">
+            PHILIP <span>LARUSSA</span>
+        </a>
+
+        <nav>
+            <a href="../about/">About</a>
+            <a href="../experience/">Experience</a>
+            <a href="../projects/">Projects</a>
+            <a href="../training/">Training</a>
+            <a href="../military/">Military</a>
+            <a href="../resume/">Resume</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="page-hero">
+    <div class="container narrow">
+
+        <p class="eyebrow">ENGINEERING PORTFOLIO</p>
+
+        <h1>Projects</h1>
+
+        <p class="hero-description">
+            Enterprise initiatives, engineering platforms, security
+            investigations, automation systems and technical research
+            developed throughout my career.
+        </p>
+
+    </div>
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <p class="section-label">FEATURED ENGINEERING</p>
+
+        <h2>Building systems to understand systems.</h2>
+
+        <p class="section-intro">
+            Much of my engineering work begins with an operational problem:
+            too much data, difficult troubleshooting, disconnected evidence
+            or repetitive manual analysis. These projects turn those problems
+            into tools.
+        </p>
+
+
+        <div class="project-catalog">
+
+
+            <article class="portfolio-project featured-project">
+
+                <div class="project-meta">
+                    <span>ENGINEERING PROJECT</span>
+                    <span>ACTIVE DEVELOPMENT</span>
+                </div>
+
+                <h3>PCAP Analyzer</h3>
+
+                <p class="project-domain">
+                    Network Engineering • Traffic Analysis
+                </p>
+
+                <p>
+                    Evidence-driven network investigation platform for
+                    analyzing packet captures and reconstructing TCP
+                    connection behavior.
+                </p>
+
+                <p>
+                    Detects connection establishment, partial handshakes,
+                    retransmissions, resets, FIN termination, endpoint roles
+                    and other stream behavior to help explain what actually
+                    occurred on the network.
+                </p>
+
+                <div class="career-tags">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>TShark</span>
+                    <span>TCP/IP</span>
+                    <span>Docker</span>
+                </div>
+
+            </article>
+
+
+            <article class="portfolio-project featured-project">
+
+                <div class="project-meta">
+                    <span>ENGINEERING PROJECT</span>
+                    <span>ACTIVE DEVELOPMENT</span>
+                </div>
+
+                <h3>Kubernetes Operations Console</h3>
+
+                <p class="project-domain">
+                    Kubernetes • Infrastructure Engineering
+                </p>
+
+                <p>
+                    Read-only Kubernetes operations platform designed to make
+                    cluster state, workloads, networking and operational
+                    relationships easier to investigate.
+                </p>
+
+                <p>
+                    Provides namespace discovery, workload and pod visibility,
+                    networking context and Kubernetes API integration through
+                    a focused operational interface.
+                </p>
+
+                <div class="career-tags">
+                    <span>Kubernetes</span>
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>Docker</span>
+                    <span>Networking</span>
+                </div>
+
+            </article>
+
+
+            <article class="portfolio-project featured-project">
+
+                <div class="project-meta">
+                    <span>SECURITY ENGINEERING</span>
+                    <span>ACTIVE DEVELOPMENT</span>
+                </div>
+
+                <h3>Investigation & Correlation Platform</h3>
+
+                <p class="project-domain">
+                    Security Investigation • Evidence Correlation
+                </p>
+
+                <p>
+                    Investigation platform for correlating application,
+                    web-server, authentication and network evidence into
+                    unified timelines.
+                </p>
+
+                <p>
+                    Designed to reduce manual investigation effort by
+                    connecting user, session, IP, application and temporal
+                    evidence while preserving the underlying source data.
+                </p>
+
+                <div class="career-tags">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>IIS</span>
+                    <span>Analytics</span>
+                    <span>IP Intelligence</span>
+                </div>
+
+            </article>
+
+
+            <article class="portfolio-project featured-project">
+
+                <div class="project-meta">
+                    <span>ENGINEERING PROJECT</span>
+                    <span>ACTIVE DEVELOPMENT</span>
+                </div>
+
+                <h3>Windows Diagnostic Toolkit</h3>
+
+                <p class="project-domain">
+                    Endpoint Engineering • Troubleshooting Automation
+                </p>
+
+                <p>
+                    PowerShell-based diagnostic pipeline that collects,
+                    analyzes, correlates and reports Windows system evidence.
+                </p>
+
+                <p>
+                    Brings together Windows events, endpoint-management
+                    activity, application failures, DCOM information,
+                    networking and recurring incident patterns to accelerate
+                    root-cause investigation.
+                </p>
+
+                <div class="career-tags">
+                    <span>PowerShell</span>
+                    <span>Windows</span>
+                    <span>Intune</span>
+                    <span>Event Logs</span>
+                    <span>Automation</span>
+                </div>
+
+            </article>
+
+
+            <article class="portfolio-project featured-project">
+
+                <div class="project-meta">
+                    <span>AI ENGINEERING</span>
+                    <span>ACTIVE DEVELOPMENT</span>
+                </div>
+
+                <h3>Private AI Knowledge Platform</h3>
+
+                <p class="project-domain">
+                    Local AI • RAG • Knowledge Systems
+                </p>
+
+                <p>
+                    Private local-AI platform designed to provide semantic
+                    retrieval, knowledge search and model-assisted analysis
+                    without requiring organizational information to leave
+                    the local environment.
+                </p>
+
+                <p>
+                    Combines local language models, embeddings, retrieval,
+                    persistent knowledge and application state into an
+                    extensible AI engineering environment.
+                </p>
+
+                <div class="career-tags">
+                    <span>Qwen</span>
+                    <span>Ollama</span>
+                    <span>RAG</span>
+                    <span>Python</span>
+                    <span>Docker</span>
+                </div>
+
+            </article>
+
+
+            <article class="portfolio-project featured-project">
+
+                <div class="project-meta">
+                    <span>SECURITY ENGINEERING</span>
+                    <span>ACTIVE DEVELOPMENT</span>
+                </div>
+
+                <h3>Security Assessment Platform</h3>
+
+                <p class="project-domain">
+                    Application Security • Authorized Security Testing
+                </p>
+
+                <p>
+                    Modular platform for organizing authorized web and
+                    infrastructure security assessment workflows.
+                </p>
+
+                <p>
+                    Brings reconnaissance, HTTP/TLS inspection,
+                    vulnerability testing, application-security analysis
+                    and evidence collection into a repeatable workflow.
+                </p>
+
+                <div class="career-tags">
+                    <span>OWASP</span>
+                    <span>Nmap</span>
+                    <span>Python</span>
+                    <span>DAST</span>
+                    <span>Security Testing</span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="section alt">
+
+    <div class="container">
+
+        <p class="section-label">PROJECT INVENTORY</p>
+
+        <h2>Additional engineering & research.</h2>
+
+        <div class="project-inventory">
+
+
+            <div class="inventory-group">
+                <p class="inventory-category">SECURITY</p>
+
+                <h3>Recon Console</h3>
+                <p>
+                    Subdomain enumeration, DNS discovery and reconnaissance
+                    correlation platform.
+                </p>
+            </div>
+
+
+            <div class="inventory-group">
+                <p class="inventory-category">CLOUD</p>
+
+                <h3>Azure Resource Monitor</h3>
+                <p>
+                    Azure inventory, resource-state and change-detection
+                    tooling for infrastructure visibility.
+                </p>
+            </div>
+
+
+            <div class="inventory-group">
+                <p class="inventory-category">CMDB / AUTOMATION</p>
+
+                <h3>CMDB Dependency Graph</h3>
+                <p>
+                    Evidence-backed Azure relationship discovery and
+                    dependency mapping engine for CMDB integration.
+                </p>
+            </div>
+
+
+            <div class="inventory-group">
+                <p class="inventory-category">DEVOPS</p>
+
+                <h3>DevOps Analyzer</h3>
+                <p>
+                    Analysis tooling for CI/CD, deployment, Kubernetes,
+                    Helm and configuration relationships.
+                </p>
+            </div>
+
+
+            <div class="inventory-group">
+                <p class="inventory-category">WEB ENGINEERING</p>
+
+                <h3>Web Traffic Test Console</h3>
+                <p>
+                    Controlled HTTP traffic-generation and response-analysis
+                    environment for application testing.
+                </p>
+            </div>
+
+
+            <div class="inventory-group">
+                <p class="inventory-category">ANALYTICS</p>
+
+                <h3>Fantasy Football Dashboard</h3>
+                <p>
+                    FastAPI-based data application for sports statistics,
+                    projections and scoring analysis.
+                </p>
+            </div>
+
+
+            <div class="inventory-group">
+                <p class="inventory-category">IDENTITY LAB</p>
+
+                <h3>AD FS Authentication Lab</h3>
+                <p>
+                    Isolated identity environment for studying federation,
+                    MFA, claims, tokens, SAML, WS-Federation and OIDC.
+                </p>
+            </div>
+
+
+            <div class="inventory-group">
+                <p class="inventory-category">AI LAB</p>
+
+                <h3>Local AI Infrastructure</h3>
+                <p>
+                    Dedicated local environment for model hosting,
+                    inference, retrieval, experimentation and
+                    AI-assisted engineering.
+                </p>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="section">
+
+    <div class="container narrow">
+
+        <p class="section-label">ENGINEERING APPROACH</p>
+
+        <h2>Tools built from operational problems.</h2>
+
+        <p class="lead">
+            I build software primarily as an extension of infrastructure
+            and security engineering: tools that expose relationships,
+            automate repetitive analysis and make difficult technical
+            systems easier to investigate.
+        </p>
+
+        <p>
+            The objective is not simply to create another dashboard.
+            The objective is to preserve evidence, reduce investigative
+            friction and turn complex system behavior into information
+            that can be acted upon.
+        </p>
+
+    </div>
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+            <strong>Philip Larussa</strong>
+
+            <p>
+                Technology Leadership • Cybersecurity • Engineering
+            </p>
+        </div>
+
+        <div>
+            <a href="../">Home</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experience | Philip Larussa</title>
+
+    <meta name="description"
+          content="Career progression of Philip Larussa across military electronics, enterprise infrastructure, networking, cybersecurity, cloud engineering, automation and technology leadership.">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+        <a class="brand" href="../">
+            PHILIP <span>LARUSSA</span>
+        </a>
+
+        <nav>
+<a href="../about/">About</a>
+<a href="../experience/">Experience</a>
+<a href="../projects/">Projects</a>
+<a href="../skills/">Skills</a>
+<a href="../training/">Training</a>
+<a href="../military/">Military</a>
+<a href="../resume/">Resume</a>
+</nav>
+    </div>
+</header>
+
+
+<main>
+
+<section class="page-hero">
+    <div class="container narrow">
+
+        <p class="eyebrow">CAREER PROGRESSION</p>
+
+        <h1>Experience</h1>
+
+        <p class="hero-description">
+            A career built from electronics and systems troubleshooting
+            into enterprise infrastructure, networking, cybersecurity,
+            cloud platforms, automation, engineering and technology leadership.
+        </p>
+
+    </div>
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <p class="section-label">CAREER TIMELINE</p>
+
+        <h2>From systems technician to technology leader.</h2>
+
+        <p class="section-intro">
+            My career has consistently combined operational responsibility
+            with hands-on technical problem solving. As the environments
+            became larger and more complex, the same systems-oriented
+            approach continued to apply.
+        </p>
+
+
+        <div class="career-timeline">
+
+
+            <!-- NAVY -->
+
+            <article class="career-entry">
+
+                <div class="career-year">
+                    <span>2005</span>
+                    <span class="career-year-end">2011</span>
+                </div>
+
+                <div class="career-content">
+
+                    <p class="career-type">UNITED STATES NAVY</p>
+
+                    <h3>Sonar Technician Second Class (Surface)</h3>
+
+                    <p class="career-subtitle">
+                        USS Gary (FFG-51) • Surface Warfare Specialist
+                    </p>
+
+                    <p>
+                        Operated, maintained and troubleshot complex
+                        electronic, acoustic-processing, signal-processing
+                        and electromechanical systems supporting
+                        antisubmarine-warfare operations.
+                    </p>
+
+                    <p>
+                        Served as a lead TACTAS technician with responsibility
+                        for equipment readiness, fault isolation, preventive
+                        and corrective maintenance, technical documentation,
+                        operational support and personnel training.
+                    </p>
+
+                    <div class="career-tags">
+                        <span>Electronics</span>
+                        <span>Signal Processing</span>
+                        <span>Fault Isolation</span>
+                        <span>Technical Leadership</span>
+                        <span>Systems Maintenance</span>
+                    </div>
+
+                    <a class="text-link" href="../military/">
+                        Explore Military Service →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- HELP DESK -->
+
+            <article class="career-entry">
+
+                <div class="career-year">
+                    <span>2011</span>
+                </div>
+
+                <div class="career-content">
+
+                    <p class="career-type">
+                        ALLIED PILOTS ASSOCIATION
+                    </p>
+
+                    <h3>Help Desk Technician</h3>
+
+                    <p class="career-subtitle">
+                        Enterprise IT Operations
+                    </p>
+
+                    <p>
+                        Transitioned from military electronics into enterprise
+                        information technology, supporting users, endpoints,
+                        applications and core business technology.
+                    </p>
+
+                    <p>
+                        Built practical experience troubleshooting Windows
+                        environments, user access, applications, hardware,
+                        networking and enterprise services while developing
+                        an understanding of business-facing IT operations.
+                    </p>
+
+                    <div class="career-tags">
+                        <span>Windows</span>
+                        <span>Desktop Support</span>
+                        <span>Enterprise Applications</span>
+                        <span>Troubleshooting</span>
+                        <span>Service Delivery</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- UTA -->
+
+            <article class="career-entry education-entry">
+
+                <div class="career-year">
+                    <span>2012</span>
+                    <span class="career-year-end">2013</span>
+                </div>
+
+                <div class="career-content">
+
+                    <p class="career-type">EDUCATION</p>
+
+                    <h3>Electrical Engineering</h3>
+
+                    <p class="career-subtitle">
+                        University of Texas at Arlington
+                    </p>
+
+                    <p>
+                        Undergraduate coursework in Electrical Engineering
+                        while continuing a professional career in enterprise
+                        information technology.
+                    </p>
+
+                    <div class="career-tags">
+                        <span>Electrical Engineering</span>
+                        <span>Undergraduate Coursework</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- NETWORK ADMIN -->
+
+            <article class="career-entry">
+
+                <div class="career-year">
+                    <span>2014</span>
+                </div>
+
+                <div class="career-content">
+
+                    <p class="career-type">
+                        ALLIED PILOTS ASSOCIATION
+                    </p>
+
+                    <h3>Network Administrator</h3>
+
+                    <p class="career-subtitle">
+                        Infrastructure & Network Engineering
+                    </p>
+
+                    <p>
+                        Expanded into administration and engineering of
+                        enterprise network, server, identity and infrastructure
+                        platforms supporting organizational operations.
+                    </p>
+
+                    <p>
+                        Responsibilities grew across Windows Server,
+                        Active Directory, networking, virtualization,
+                        authentication, application infrastructure,
+                        troubleshooting and production operations.
+                    </p>
+
+                    <div class="career-tags">
+                        <span>Active Directory</span>
+                        <span>Windows Server</span>
+                        <span>Networking</span>
+                        <span>Virtualization</span>
+                        <span>Identity</span>
+                        <span>Infrastructure</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- NETWORK MANAGER -->
+
+            <article class="career-entry">
+
+                <div class="career-year">
+                    <span>2018</span>
+                </div>
+
+                <div class="career-content">
+
+                    <p class="career-type">
+                        ALLIED PILOTS ASSOCIATION
+                    </p>
+
+                    <h3>Network Manager</h3>
+
+                    <p class="career-subtitle">
+                        Infrastructure • Identity • Network Operations
+                    </p>
+
+                    <p>
+                        Progressed into infrastructure leadership while
+                        remaining directly involved in architecture,
+                        implementation, troubleshooting and modernization
+                        of critical enterprise systems.
+                    </p>
+
+                    <p>
+                        Work expanded across identity and federation,
+                        Microsoft infrastructure, networking, security,
+                        virtualization, application delivery, cloud services,
+                        disaster recovery and operational resilience.
+                    </p>
+
+                    <div class="career-tags">
+                        <span>Infrastructure Leadership</span>
+                        <span>AD FS</span>
+                        <span>Microsoft 365</span>
+                        <span>Security</span>
+                        <span>Cloud</span>
+                        <span>Disaster Recovery</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- IT MANAGER -->
+
+            <article class="career-entry featured-career">
+
+                <div class="career-year">
+                    <span>2022</span>
+                    <span class="career-year-end">Present</span>
+                </div>
+
+                <div class="career-content">
+
+                    <p class="career-type">
+                        ALLIED PILOTS ASSOCIATION
+                    </p>
+
+                    <h3>Information Technology Manager</h3>
+
+                    <p class="career-subtitle">
+                        Technology Leadership • Infrastructure • Security • Engineering
+                    </p>
+
+                    <p>
+                        Leads enterprise technology operations spanning
+                        infrastructure, cybersecurity, cloud services,
+                        identity, networking, endpoint management,
+                        service delivery, vendors and operational resilience.
+                    </p>
+
+                    <p>
+                        Combines management responsibility with hands-on
+                        engineering across Microsoft and Azure platforms,
+                        identity systems, security controls, automation,
+                        incident investigation and application infrastructure.
+                    </p>
+
+                    <p>
+                        Partners with organizational leadership, vendors,
+                        legal, compliance and technical teams on technology
+                        strategy, risk, modernization and major operational
+                        initiatives.
+                    </p>
+
+                    <div class="career-tags">
+                        <span>Technology Leadership</span>
+                        <span>Cybersecurity</span>
+                        <span>Azure</span>
+                        <span>Microsoft 365</span>
+                        <span>Identity</span>
+                        <span>Infrastructure</span>
+                        <span>Incident Response</span>
+                        <span>Automation</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ENTERPRISE INITIATIVES -->
+
+<section class="section alt">
+
+    <div class="container">
+
+        <p class="section-label">SELECTED ENTERPRISE INITIATIVES</p>
+
+        <h2>Modernizing enterprise technology.</h2>
+
+        <p class="section-intro">
+            Representative initiatives spanning identity, collaboration,
+            cloud services, communications, infrastructure and security.
+            Detailed engineering projects are maintained separately in
+            the Projects portfolio.
+        </p>
+
+
+        <div class="initiative-grid">
+
+            <article class="initiative-card">
+                <span class="initiative-year">2018–2020</span>
+
+                <h3>Enterprise Federation Migration</h3>
+
+                <p>
+                    Migrated application single sign-on from Atlassian
+                    Crowd to Microsoft Active Directory Federation Services,
+                    establishing a centralized enterprise federation platform.
+                </p>
+
+                <div class="career-tags">
+                    <span>AD FS</span>
+                    <span>SSO</span>
+                    <span>Identity</span>
+                </div>
+            </article>
+
+
+            <article class="initiative-card">
+                <span class="initiative-year">2020–2022</span>
+
+                <h3>Exchange Online Migration</h3>
+
+                <p>
+                    Supported the migration of enterprise messaging from
+                    on-premises Exchange infrastructure to Microsoft 365
+                    and Exchange Online.
+                </p>
+
+                <div class="career-tags">
+                    <span>Microsoft 365</span>
+                    <span>Exchange Online</span>
+                    <span>Cloud</span>
+                </div>
+            </article>
+
+
+            <article class="initiative-card">
+                <span class="initiative-year">2022</span>
+
+                <h3>SharePoint Online Migration</h3>
+
+                <p>
+                    Migrated collaboration services from on-premises
+                    SharePoint infrastructure to SharePoint Online.
+                </p>
+
+                <div class="career-tags">
+                    <span>SharePoint</span>
+                    <span>Microsoft 365</span>
+                    <span>Cloud Migration</span>
+                </div>
+            </article>
+
+
+            <article class="initiative-card">
+                <span class="initiative-year">2022–Present</span>
+
+                <h3>Application Federation Modernization</h3>
+
+                <p>
+                    Continued modernization of authentication and federation
+                    for web and business applications using enterprise
+                    identity services and modern authentication protocols.
+                </p>
+
+                <div class="career-tags">
+                    <span>AD FS</span>
+                    <span>SAML</span>
+                    <span>OIDC</span>
+                    <span>OAuth</span>
+                </div>
+            </article>
+
+
+            <article class="initiative-card">
+                <span class="initiative-year">2022</span>
+
+                <h3>Security Assessment Program</h3>
+
+                <p>
+                    Coordinated external and internal security assessment
+                    activities, penetration testing and remediation efforts
+                    across enterprise technology environments.
+                </p>
+
+                <div class="career-tags">
+                    <span>Security</span>
+                    <span>Penetration Testing</span>
+                    <span>Risk</span>
+                </div>
+            </article>
+
+
+            <article class="initiative-card">
+                <span class="initiative-year">2024–2025</span>
+
+                <h3>Cloud Communications Migration</h3>
+
+                <p>
+                    Led planning, design and implementation of the migration
+                    from an on-premises Avaya communications platform to
+                    RingCentral cloud communications.
+                </p>
+
+                <div class="career-tags">
+                    <span>RingCentral</span>
+                    <span>Avaya</span>
+                    <span>Cloud Migration</span>
+                </div>
+            </article>
+
+
+            <article class="initiative-card">
+                <span class="initiative-year">PROGRAM</span>
+
+                <h3>Third-Party Security Risk Management</h3>
+
+                <p>
+                    Implemented standardized vendor-security assessment
+                    workflows with continuous third-party security monitoring,
+                    risk scoring and reporting.
+                </p>
+
+                <div class="career-tags">
+                    <span>UpGuard</span>
+                    <span>Vendor Risk</span>
+                    <span>Governance</span>
+                </div>
+            </article>
+
+
+            <article class="initiative-card">
+                <span class="initiative-year">ONGOING</span>
+
+                <h3>Security & Infrastructure Modernization</h3>
+
+                <p>
+                    Continued development of enterprise security,
+                    infrastructure, monitoring, resilience and automation
+                    capabilities across Microsoft, Azure and supporting
+                    technology platforms.
+                </p>
+
+                <div class="career-tags">
+                    <span>Azure</span>
+                    <span>Security</span>
+                    <span>Automation</span>
+                    <span>Infrastructure</span>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- EVOLUTION -->
+
+<section class="section">
+
+    <div class="container">
+
+        <p class="section-label">TECHNICAL EVOLUTION</p>
+
+        <h2>The systems changed. The methodology didn't.</h2>
+
+        <div class="evolution-path">
+
+            <div>
+                <span>01</span>
+                <strong>Electronics</strong>
+                <small>2005</small>
+            </div>
+
+            <div class="evolution-arrow">→</div>
+
+            <div>
+                <span>02</span>
+                <strong>Enterprise IT</strong>
+                <small>2011</small>
+            </div>
+
+            <div class="evolution-arrow">→</div>
+
+            <div>
+                <span>03</span>
+                <strong>Infrastructure</strong>
+                <small>2014</small>
+            </div>
+
+            <div class="evolution-arrow">→</div>
+
+            <div>
+                <span>04</span>
+                <strong>Leadership</strong>
+                <small>2018+</small>
+            </div>
+
+            <div class="evolution-arrow">→</div>
+
+            <div>
+                <span>05</span>
+                <strong>Cloud & Security</strong>
+                <small>Modern</small>
+            </div>
+
+            <div class="evolution-arrow">→</div>
+
+            <div>
+                <span>06</span>
+                <strong>Automation & AI</strong>
+                <small>Today</small>
+            </div>
+
+        </div>
+
+
+        <div class="methodology-statement">
+
+            <p>
+                Understand the architecture.
+                Establish expected behavior.
+                Gather evidence.
+                Follow the signal path.
+                Isolate the failure.
+                Correct the problem.
+                Verify the result.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+
+</main>
+
+
+<footer>
+    <div class="container footer-content">
+
+        <div>
+            <strong>Philip Larussa</strong>
+
+            <p>
+                Technology Leadership • Cybersecurity • Engineering
+            </p>
+        </div>
+
+        <div>
+            <a href="../">Home</a>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>

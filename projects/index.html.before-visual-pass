@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Philip Larussa</title>
+
+    <meta name="description"
+          content="Engineering portfolio covering cybersecurity, infrastructure, networking, cloud, identity, automation, Kubernetes and artificial intelligence.">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container nav-container">
+
+<a class="brand" href="../">PHILIP <span>LARUSSA</span></a>
+
+<nav>
+<a href="../about/">About</a>
+<a href="../experience/">Experience</a>
+<a href="../projects/">Projects</a>
+<a href="../skills/">Skills</a>
+<a href="../training/">Training</a>
+<a href="../military/">Military</a>
+<a href="../resume/">Resume</a>
+</nav>
+
+</div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="page-hero">
+<div class="container narrow">
+
+<p class="eyebrow">ENGINEERING PORTFOLIO</p>
+
+<h1>Projects</h1>
+
+<p class="hero-description">
+I build tools that investigate systems, correlate evidence,
+automate repetitive analysis and make complex technology
+environments easier to understand.
+</p>
+
+</div>
+</section>
+
+
+<!-- PHILOSOPHY -->
+
+<section class="section">
+<div class="container">
+
+<p class="section-label">ENGINEERING APPROACH</p>
+
+<h2>Software as an extension of infrastructure and security engineering.</h2>
+
+<p class="section-intro">
+Many of these projects began with an operational problem:
+too much data, fragmented evidence, repetitive troubleshooting,
+limited visibility or a need to understand relationships across
+multiple systems. The goal is to turn that problem into a
+repeatable engineering workflow.
+</p>
+
+<div class="project-principles">
+
+<div>
+<strong>Preserve Evidence</strong>
+<p>Keep the underlying technical evidence available for validation.</p>
+</div>
+
+<div>
+<strong>Expose Relationships</strong>
+<p>Make dependencies, timelines and system behavior easier to understand.</p>
+</div>
+
+<div>
+<strong>Reduce Friction</strong>
+<p>Automate repetitive investigation without hiding the technical details.</p>
+</div>
+
+<div>
+<strong>Build Safely</strong>
+<p>Use read-only, isolated or explicitly authorized workflows where appropriate.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- FEATURED -->
+
+<section class="section alt">
+<div class="container">
+
+<p class="section-label">FEATURED ENGINEERING</p>
+
+<h2>Major Projects</h2>
+
+<div class="project-catalog-grid">
+
+
+<article class="catalog-project featured-project">
+
+<div class="project-meta">
+<span>NETWORK ENGINEERING</span>
+<span class="project-status">ACTIVE DEVELOPMENT</span>
+</div>
+
+<h3><a class="project-title-link" href="./pcap-analyzer/">PCAP Analyzer</a></h3>
+
+<p>
+Evidence-driven network investigation platform designed to
+turn packet captures into structured TCP connection analysis.
+</p>
+
+<ul>
+<li>TCP stream reconstruction and endpoint-role inference</li>
+<li>SYN / SYN-ACK / partial-handshake analysis</li>
+<li>RST initiator and FIN termination analysis</li>
+<li>Retransmission and connection-behavior evidence</li>
+<li>Stream drill-down with evidence-backed assessments</li>
+</ul>
+
+<div class="project-tech">
+Python • FastAPI • TShark • Docker • TCP/IP
+</div>
+
+</article>
+
+
+<article class="catalog-project featured-project">
+
+<div class="project-meta">
+<span>INFRASTRUCTURE</span>
+<span class="project-status">ACTIVE DEVELOPMENT</span>
+</div>
+
+<h3><a class="project-title-link" href="./kubernetes-operations-console/">Kubernetes Operations Console</a></h3>
+
+<p>
+Read-only operations platform for understanding Kubernetes
+cluster state without requiring engineers to assemble information
+from multiple command-line queries.
+</p>
+
+<ul>
+<li>Namespace and workload discovery</li>
+<li>Pod and deployment visibility</li>
+<li>Kubernetes networking visibility</li>
+<li>Kubernetes API integration</li>
+<li>Operational error handling and sanitized output</li>
+</ul>
+
+<div class="project-tech">
+Kubernetes • Python • FastAPI • Docker • Kubernetes API
+</div>
+
+</article>
+
+
+<article class="catalog-project featured-project">
+
+<div class="project-meta">
+<span>WINDOWS ENGINEERING</span>
+<span class="project-status">ACTIVE DEVELOPMENT</span>
+</div>
+
+<h3><a class="project-title-link" href="./windows-diagnostic-toolkit/">Windows Diagnostic Toolkit</a></h3>
+
+<p>
+PowerShell-based diagnostic pipeline that collects system
+evidence, analyzes events, correlates incidents and produces
+structured investigation reports.
+</p>
+
+<ul>
+<li>Windows event and system-state collection</li>
+<li>Endpoint-management diagnostic evidence</li>
+<li>Application crash analysis</li>
+<li>DCOM CLSID → APPID → service resolution</li>
+<li>Recurring and persistent incident detection</li>
+<li>HTML investigation reporting</li>
+</ul>
+
+<div class="project-tech">
+PowerShell • Windows • Endpoint Management • Event Logs
+</div>
+
+</article>
+
+
+<article class="catalog-project featured-project">
+
+<div class="project-meta">
+<span>SECURITY INVESTIGATION</span>
+<span class="project-status">ACTIVE DEVELOPMENT</span>
+</div>
+
+<h3><a class="project-title-link" href="./investigation-correlation-platform/">Investigation & Correlation Platform</a></h3>
+
+<p>
+Security and application investigation platform that correlates
+evidence from multiple data sources into structured timelines
+and behavioral views.
+</p>
+
+<ul>
+<li>User, IP and date-based investigations</li>
+<li>Web and application-log correlation</li>
+<li>Session and cross-IP analysis</li>
+<li>Client-IP forwarding analysis</li>
+<li>IP intelligence enrichment and caching</li>
+<li>Rapid transaction-sequence detection</li>
+</ul>
+
+<div class="project-tech">
+Python • FastAPI • SQL • SQLite • IIS • Analytics
+</div>
+
+</article>
+
+
+<article class="catalog-project featured-project">
+
+<div class="project-meta">
+<span>CYBERSECURITY</span>
+<span class="project-status">ACTIVE DEVELOPMENT</span>
+</div>
+
+<h3><a class="project-title-link" href="./security-assessment-platform/">Security Assessment Platform</a></h3>
+
+<p>
+Authorized security-assessment environment designed to
+organize reconnaissance, infrastructure testing,
+application-security testing and evidence collection.
+</p>
+
+<ul>
+<li>Reconnaissance and attack-surface discovery</li>
+<li>DNS and subdomain enumeration</li>
+<li>HTTP and TLS inspection</li>
+<li>Port and service discovery</li>
+<li>DAST and web-application security workflows</li>
+<li>Structured retention of assessment evidence</li>
+</ul>
+
+<div class="project-tech">
+Python • OWASP • ZAP • Nmap • HTTP/TLS • Security Testing
+</div>
+
+</article>
+
+
+<article class="catalog-project featured-project">
+
+<div class="project-meta">
+<span>ARTIFICIAL INTELLIGENCE</span>
+<span class="project-status">ACTIVE DEVELOPMENT</span>
+</div>
+
+<h3><a class="project-title-link" href="./private-ai-knowledge-platform/">Private AI Knowledge Platform</a></h3>
+
+<p>
+Private local AI environment for technical knowledge retrieval,
+semantic search and AI-assisted engineering without requiring
+all knowledge to be sent to hosted model services.
+</p>
+
+<ul>
+<li>Local language-model inference</li>
+<li>Retrieval-augmented generation</li>
+<li>Embeddings and semantic retrieval</li>
+<li>Persistent knowledge storage</li>
+<li>Multi-model comparison and evaluation</li>
+<li>Activity and system-state awareness</li>
+</ul>
+
+<div class="project-tech">
+Python • FastAPI • Ollama • Qwen • RAG • Embeddings • Docker
+</div>
+
+</article>
+
+
+<article class="catalog-project featured-project">
+
+<div class="project-meta">
+<span>CLOUD ENGINEERING</span>
+<span class="project-status">ACTIVE DEVELOPMENT</span>
+</div>
+
+<h3>Azure Resource Monitor</h3>
+
+<p>
+Azure inventory and change-detection platform designed to
+provide persistent visibility into cloud resources and changes.
+</p>
+
+<ul>
+<li>Azure resource inventory</li>
+<li>Added and removed resource detection</li>
+<li>Persistent resource history</li>
+<li>Resource-type dashboards</li>
+<li>Change and alert workflows</li>
+<li>Cloud authentication and failure handling</li>
+</ul>
+
+<div class="project-tech">
+Azure • Python • FastAPI • APIs • Cloud Automation
+</div>
+
+</article>
+
+
+<article class="catalog-project featured-project">
+
+<div class="project-meta">
+<span>CMDB / AUTOMATION</span>
+<span class="project-status">PILOT</span>
+</div>
+
+<h3>CMDB Dependency Graph</h3>
+
+<p>
+Evidence-backed dependency-mapping engine for discovering
+relationships between cloud resources and translating them
+into structured configuration-management mappings.
+</p>
+
+<ul>
+<li>Azure relationship discovery</li>
+<li>Evidence-backed dependency graph</li>
+<li>Application-to-infrastructure tracing</li>
+<li>SQLite graph persistence</li>
+<li>CI mapping and reconciliation planning</li>
+<li>Isolated design before production write integration</li>
+</ul>
+
+<div class="project-tech">
+Python • Azure • SQLite • CMDB • Dependency Mapping
+</div>
+
+</article>
+
+
+</div>
+</div>
+</section>
+
+
+<!-- SECURITY -->
+
+<section class="section">
+<div class="container">
+
+<p class="section-label">SECURITY ENGINEERING</p>
+
+<h2>Assessment, investigation and defensive tooling.</h2>
+
+<div class="project-catalog-grid compact-project-grid">
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>RECONNAISSANCE</span>
+<span class="project-status">ACTIVE</span>
+</div>
+<h3>Recon Console</h3>
+<p>
+Subdomain and DNS reconnaissance platform combining multiple
+discovery methods and correlating results into a common view.
+</p>
+<div class="project-tech">
+Python • FastAPI • DNS • Subfinder
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>THREAT INVESTIGATION</span>
+<span class="project-status">OPERATIONAL WORKFLOW</span>
+</div>
+<h3>Defender Investigation Workflows</h3>
+<p>
+Reusable hunting and investigation patterns for endpoint,
+process and network telemetry using Microsoft Defender
+Advanced Hunting.
+</p>
+<div class="project-tech">
+Defender XDR • KQL • Endpoint Telemetry
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>WEB SECURITY</span>
+<span class="project-status">ACTIVE</span>
+</div>
+<h3>DAST & Web Security Workflows</h3>
+<p>
+Repeatable application-security workflows covering DAST,
+OWASP testing, findings review, HTTP behavior, TLS and
+supporting technical evidence.
+</p>
+<div class="project-tech">
+OWASP ZAP • DAST • HTTP • TLS
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>WAF / CLOUD SECURITY</span>
+<span class="project-status">OPERATIONAL ENGINEERING</span>
+</div>
+<h3>WAF Investigation & Analytics</h3>
+<p>
+Logging and investigation workflows for understanding
+managed-rule matches, requests, client identity and
+application-protection behavior.
+</p>
+<div class="project-tech">
+Azure Front Door • WAF • Log Analytics • KQL
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>NETWORK SECURITY</span>
+<span class="project-status">OPERATIONAL WORKFLOW</span>
+</div>
+<h3>Firewall Analytics</h3>
+<p>
+Security-analysis workflows for investigating source
+networks, traffic patterns and firewall evidence.
+</p>
+<div class="project-tech">
+Fortinet • FortiAnalyzer • Network Security
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>TESTING</span>
+<span class="project-status">ACTIVE</span>
+</div>
+<h3>Web Traffic Test Console</h3>
+<p>
+Controlled HTTP traffic-generation tool used to reproduce
+application behavior and support defensive-control testing.
+</p>
+<div class="project-tech">
+Python • FastAPI • HTTP • Testing
+</div>
+</article>
+
+
+</div>
+</div>
+</section>
+
+
+<!-- INFRASTRUCTURE -->
+
+<section class="section alt">
+<div class="container">
+
+<p class="section-label">INFRASTRUCTURE & IDENTITY</p>
+
+<h2>Platforms for understanding complex environments.</h2>
+
+<div class="project-catalog-grid compact-project-grid">
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>IDENTITY</span>
+<span class="project-status">LAB / RESEARCH</span>
+</div>
+<h3>AD FS Authentication Lab</h3>
+<p>
+Isolated identity lab for observing authentication behavior,
+claims, federation protocols, MFA integration and token exchange.
+</p>
+<div class="project-tech">
+AD FS • SAML • OIDC • OAuth • MFA • Windows Server
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>IDENTITY DIAGNOSTICS</span>
+<span class="project-status">ENGINEERING WORKFLOW</span>
+</div>
+<h3>Token & Claims Analysis</h3>
+<p>
+Diagnostic workflows for examining claims, authentication
+tokens, group information, request size and federation behavior.
+</p>
+<div class="project-tech">
+AD FS • Kerberos • Claims • SAML • JWT
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>KUBERNETES</span>
+<span class="project-status">LAB / RESEARCH</span>
+</div>
+<h3>Kubernetes Networking Lab</h3>
+<p>
+Controlled Kubernetes environment for investigating ingress,
+routing, services, load balancing, deployment behavior
+and cluster networking.
+</p>
+<div class="project-tech">
+Kubernetes • kind • Helm • NGINX
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>DEVOPS</span>
+<span class="project-status">DEVELOPMENT</span>
+</div>
+<h3>DevOps Analyzer</h3>
+<p>
+Analysis concept for correlating configuration and deployment
+evidence across CI/CD, Kubernetes and application-delivery systems.
+</p>
+<div class="project-tech">
+Azure DevOps • GitHub • Kubernetes • Helm
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>CLOUD AUTOMATION</span>
+<span class="project-status">DEVELOPMENT</span>
+</div>
+<h3>Azure CMDB Automation</h3>
+<p>
+Cloud-discovery and configuration-management workflows for
+resource classification, ownership, relationships,
+reconciliation and CI mapping.
+</p>
+<div class="project-tech">
+Azure • APIs • Python • CMDB • Automation
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>CONTAINERS</span>
+<span class="project-status">ONGOING LAB</span>
+</div>
+<h3>Container Engineering Lab</h3>
+<p>
+Docker and Kubernetes environment supporting development,
+testing, deployment and troubleshooting of engineering tools.
+</p>
+<div class="project-tech">
+Docker • Kubernetes • Linux • Networking
+</div>
+</article>
+
+
+</div>
+</div>
+</section>
+
+
+<!-- AI -->
+
+<section class="section">
+<div class="container">
+
+<p class="section-label">AI & AUTOMATION</p>
+
+<h2>Local AI as an engineering capability.</h2>
+
+<div class="project-catalog-grid compact-project-grid">
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>AI INFRASTRUCTURE</span>
+<span class="project-status">ACTIVE</span>
+</div>
+<h3>Local AI Lab</h3>
+<p>
+Dedicated local environment for running, evaluating and
+integrating language models into technical workflows.
+</p>
+<div class="project-tech">
+Linux • Ollama • Qwen • Docker
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>KNOWLEDGE SYSTEMS</span>
+<span class="project-status">ACTIVE</span>
+</div>
+<h3>RAG & Semantic Search</h3>
+<p>
+Retrieval pipeline for grounding local language models in
+stored technical knowledge using embeddings and semantic search.
+</p>
+<div class="project-tech">
+RAG • Embeddings • Vector Retrieval • Python
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>MODEL EVALUATION</span>
+<span class="project-status">ACTIVE</span>
+</div>
+<h3>Multi-Model Comparison</h3>
+<p>
+Background model-comparison workflow for evaluating multiple
+local models and comparing responses on technical questions.
+</p>
+<div class="project-tech">
+Qwen • Ollama • Python • Model Evaluation
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>AI OPERATIONS</span>
+<span class="project-status">ACTIVE</span>
+</div>
+<h3>Activity & State Intelligence</h3>
+<p>
+Collection and change-detection workflows that give the
+private AI environment awareness of recent technical activity
+and system state.
+</p>
+<div class="project-tech">
+Python • Automation • Local AI
+</div>
+</article>
+
+
+</div>
+</div>
+</section>
+
+
+<!-- OTHER -->
+
+<section class="section alt">
+<div class="container">
+
+<p class="section-label">ADDITIONAL ENGINEERING</p>
+
+<h2>Experiments, utilities and applied development.</h2>
+
+<div class="project-catalog-grid compact-project-grid">
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>DATA / APPLICATION</span>
+<span class="project-status">BUILT</span>
+</div>
+<h3>Fantasy Football Dashboard</h3>
+<p>
+FastAPI application integrating sports data and presenting
+actual, projected and system information through custom views.
+</p>
+<div class="project-tech">
+Python • FastAPI • APIs • Data
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>OPERATIONS</span>
+<span class="project-status">CONCEPT / TOOLSET</span>
+</div>
+<h3>IT Toolbox</h3>
+<p>
+Collection of operational utilities and diagnostic concepts
+designed around common infrastructure and support workflows.
+</p>
+<div class="project-tech">
+Automation • Diagnostics • Infrastructure
+</div>
+</article>
+
+
+<article class="catalog-project">
+<div class="project-meta">
+<span>SECURITY UTILITIES</span>
+<span class="project-status">PROTOTYPES</span>
+</div>
+<h3>Security Utility Experiments</h3>
+<p>
+Smaller focused experiments covering certificate visibility,
+DNS analysis, HTTP headers, logs and indicator investigation.
+</p>
+<div class="project-tech">
+Security • DNS • TLS • HTTP • Logs
+</div>
+</article>
+
+
+</div>
+</div>
+</section>
+
+
+<!-- CASE STUDIES -->
+
+<section class="section">
+<div class="container narrow">
+
+<p class="section-label">NEXT LEVEL OF DETAIL</p>
+
+<h2>Project case studies</h2>
+
+<p class="section-intro">
+The major projects in this catalog will be expanded into individual
+case studies covering the problem being solved, architecture,
+technical decisions, capabilities, challenges, screenshots,
+lessons learned and current development status.
+</p>
+
+<div class="case-study-list">
+
+<span>PCAP Analyzer</span>
+<span>Kubernetes Operations Console</span>
+<span>Windows Diagnostic Toolkit</span>
+<span>Investigation & Correlation Platform</span>
+<span>Security Assessment Platform</span>
+<span>Private AI Knowledge Platform</span>
+<span>Azure Resource Monitor</span>
+<span>CMDB Dependency Graph</span>
+
+</div>
+
+</div>
+</section>
+
+
+</main>
+
+
+<footer>
+<div class="container footer-content">
+
+<div>
+<strong>Philip Larussa</strong>
+<p>Technology Leadership • Cybersecurity • Engineering</p>
+</div>
+
+<div>
+<a href="../">Home</a>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

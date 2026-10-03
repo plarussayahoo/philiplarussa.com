@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Private AI Knowledge Platform | Philip Larussa</title>
+
+<meta name="description"
+content="Private AI Knowledge Platform engineering case study covering local LLM inference, RAG, embeddings, semantic retrieval, model comparison, background processing and persistent system knowledge.">
+
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container nav-container">
+
+<a class="brand" href="../../">PHILIP <span>LARUSSA</span></a>
+
+<nav>
+<a href="../../about/">About</a>
+<a href="../../experience/">Experience</a>
+<a href="../../projects/">Projects</a>
+<a href="../../skills/">Skills</a>
+<a href="../../training/">Training</a>
+<a href="../../military/">Military</a>
+<a href="../../resume/">Resume</a>
+</nav>
+
+</div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="case-hero">
+<div class="container">
+
+<a class="case-back" href="../">← Projects</a>
+
+<p class="eyebrow">ARTIFICIAL INTELLIGENCE • ACTIVE DEVELOPMENT</p>
+
+<h1>Private AI Knowledge Platform</h1>
+
+<p class="case-lead">
+A locally hosted AI platform combining private language-model
+inference, semantic retrieval, persistent knowledge, model
+comparison and system-state intelligence.
+</p>
+
+<div class="case-tech">
+<span>Python</span>
+<span>FastAPI</span>
+<span>Ollama</span>
+<span>Qwen</span>
+<span>RAG</span>
+<span>Embeddings</span>
+<span>Vector Search</span>
+<span>Docker</span>
+</div>
+
+</div>
+</section>
+
+
+<!-- OVERVIEW -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">01 / OVERVIEW</p>
+<h2>AI that understands more than the current prompt.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+A local language model can answer questions, but useful technical
+assistance requires more than inference. It needs access to
+relevant knowledge, project state, historical context and a way
+to retrieve that information when it matters.
+</p>
+
+<p>
+The Private AI Knowledge Platform was created as an experimental
+local AI environment where models can operate against indexed
+knowledge and changing technical state without requiring the
+entire workflow to depend on a hosted AI service.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Engineering Objective</strong>
+<p>
+Build a private AI layer that combines local inference with
+retrieval, persistent context and observable system state.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- PROBLEM -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">02 / PROBLEM</p>
+<h2>A model is not a knowledge system.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<span>01</span>
+<h3>Context Limits</h3>
+<p>
+A language model cannot continuously hold every document,
+project artifact and historical observation in its prompt.
+</p>
+</div>
+
+<div class="case-card">
+<span>02</span>
+<h3>Knowledge Changes</h3>
+<p>
+Technical environments evolve, making previously accurate
+context stale over time.
+</p>
+</div>
+
+<div class="case-card">
+<span>03</span>
+<h3>Model Differences</h3>
+<p>
+Different models can produce meaningfully different answers
+to the same technical question.
+</p>
+</div>
+
+<div class="case-card">
+<span>04</span>
+<h3>Long Operations</h3>
+<p>
+Retrieval and multi-model analysis may take longer than a
+normal synchronous web request.
+</p>
+</div>
+
+<div class="case-card">
+<span>05</span>
+<h3>Private Data</h3>
+<p>
+Some technical knowledge is better suited to controlled local
+processing than unnecessary external transmission.
+</p>
+</div>
+
+<div class="case-card">
+<span>06</span>
+<h3>Source Visibility</h3>
+<p>
+Answers become more useful when the supporting retrieved context
+remains visible to the user.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ARCHITECTURE -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">03 / RAG ARCHITECTURE</p>
+<h2>Retrieve relevant knowledge before asking the model.</h2>
+</div>
+
+<div class="architecture-flow">
+
+<div>
+<span>01</span>
+<strong>Knowledge</strong>
+<small>Documents, notes and system context</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>02</span>
+<strong>Embeddings</strong>
+<small>Semantic representation</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>03</span>
+<strong>Vector Search</strong>
+<small>Relevant context retrieval</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>04</span>
+<strong>Prompt Context</strong>
+<small>Question plus retrieved evidence</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>05</span>
+<strong>Local LLM</strong>
+<small>Qwen inference through Ollama</small>
+</div>
+
+</div>
+
+<p class="architecture-note">
+Retrieval-Augmented Generation allows the model to answer using
+a focused subset of relevant knowledge rather than attempting to
+place the entire knowledge base into every prompt.
+</p>
+
+</div>
+</section>
+
+
+<!-- REQUEST FLOW -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">04 / REQUEST FLOW</p>
+<h2>From question to evidence-backed context.</h2>
+</div>
+
+<div class="workflow-list">
+
+<div class="workflow-step">
+<span>01</span>
+<div>
+<h3>Receive Question</h3>
+<p>
+FastAPI receives a technical question through the application layer.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>02</span>
+<div>
+<h3>Interpret Request</h3>
+<p>
+The platform determines the appropriate processing path for
+the requested operation.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>03</span>
+<div>
+<h3>Search Knowledge</h3>
+<p>
+Semantic retrieval identifies context related to the question.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>04</span>
+<div>
+<h3>Build Context</h3>
+<p>
+Relevant retrieved material is assembled with the user's question.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>05</span>
+<div>
+<h3>Run Local Inference</h3>
+<p>
+The selected local model processes the question and supporting context.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>06</span>
+<div>
+<h3>Return Answer & Sources</h3>
+<p>
+The response includes the generated answer together with
+available retrieval context and routing information.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- CAPABILITIES -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">05 / CAPABILITIES</p>
+<h2>An application layer around local AI.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<h3>Local Inference</h3>
+<p>
+Runs language models locally using Ollama rather than requiring
+every request to use an external inference service.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Semantic Retrieval</h3>
+<p>
+Searches knowledge based on semantic similarity instead of
+depending exclusively on literal keyword matches.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Embeddings</h3>
+<p>
+Transforms knowledge into vector representations that support
+semantic retrieval.
+</p>
+</div>
+
+<div class="case-card">
+<h3>RAG</h3>
+<p>
+Supplies retrieved knowledge to the model as contextual evidence
+for answering technical questions.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Source Context</h3>
+<p>
+Preserves information about the material retrieved for a response.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Model Routing</h3>
+<p>
+Allows different processing paths to be selected based on the
+type of AI operation being requested.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Model Comparison</h3>
+<p>
+Supports sending the same question through multiple model paths
+for comparative analysis.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Background Jobs</h3>
+<p>
+Moves longer-running comparison operations outside the normal
+interactive request path.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Activity Journal</h3>
+<p>
+Maintains persistent information about platform activity and
+technical state over time.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- LOCAL AI -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">06 / LOCAL AI INFRASTRUCTURE</p>
+<h2>The model runs inside an engineering platform.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+The project runs on dedicated local AI infrastructure with
+Ollama providing the model-serving layer and Qwen-family models
+supporting general and code-oriented workloads.
+</p>
+
+<p>
+The environment is intentionally useful without a discrete GPU,
+allowing architecture, retrieval, routing and application behavior
+to be developed independently from future inference acceleration.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Architecture Principle</strong>
+<p>
+Separate the AI application from the underlying model so inference
+hardware and model selection can evolve without redesigning the
+entire knowledge platform.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- MODEL COMPARISON -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">07 / MODEL COMPARISON</p>
+<h2>Different models can be treated as different perspectives.</h2>
+</div>
+
+<div class="architecture-flow">
+
+<div>
+<span>01</span>
+<strong>Question</strong>
+<small>Shared input</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>02</span>
+<strong>Model A</strong>
+<small>Independent response</small>
+</div>
+
+<b>+</b>
+
+<div>
+<span>03</span>
+<strong>Model B</strong>
+<small>Independent response</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>04</span>
+<strong>Compare</strong>
+<small>Response evaluation</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>05</span>
+<strong>Synthesis</strong>
+<small>Combined result</small>
+</div>
+
+</div>
+
+<p class="architecture-note">
+Model comparison is separated from the fast interactive request
+path because running multiple inference operations can take
+significantly longer than a single local response.
+</p>
+
+</div>
+</section>
+
+
+<!-- TEMPORAL -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">08 / STATE INTELLIGENCE</p>
+<h2>Knowledge should reflect what changed.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Static documentation describes what an environment looked like
+at the time it was written. Operational knowledge becomes more
+valuable when the platform can also observe current state and
+recognize meaningful changes.
+</p>
+
+<p>
+The project therefore includes collection and change-detection
+workflows designed to create a history of technical state rather
+than treating every observation as isolated.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Goal</strong>
+<p>
+Move from "What do my documents say?" toward "What do I know,
+what changed and what does the current evidence show?"
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ENGINEERING DECISIONS -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">09 / ENGINEERING DECISIONS</p>
+<h2>Build the knowledge system around the model—not inside it.</h2>
+</div>
+
+<div class="decision-list">
+
+<div>
+<h3>Keep knowledge external.</h3>
+<p>
+Project knowledge is indexed and retrieved rather than assuming
+the language model permanently contains the required information.
+</p>
+</div>
+
+<div>
+<h3>Separate retrieval from generation.</h3>
+<p>
+The platform can inspect what information was retrieved
+independently from the answer generated by the model.
+</p>
+</div>
+
+<div>
+<h3>Keep the fast path fast.</h3>
+<p>
+Interactive local questions remain separate from expensive
+multi-model comparison operations.
+</p>
+</div>
+
+<div>
+<h3>Use background processing for long work.</h3>
+<p>
+Longer AI operations can expose progress and state rather than
+holding a synchronous request open indefinitely.
+</p>
+</div>
+
+<div>
+<h3>Persist operational history.</h3>
+<p>
+Activity and state observations are retained so the system can
+develop useful temporal context.
+</p>
+</div>
+
+<div>
+<h3>Design for model replacement.</h3>
+<p>
+The application should be able to evaluate different models
+without tightly coupling knowledge management to one model.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- EXAMPLE -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">10 / EXAMPLE QUERY</p>
+<h2>Ask about the environment, not just the model's training data.</h2>
+</div>
+
+<div class="evidence-example">
+
+<div class="evidence-line">
+<span>QUESTION</span>
+<p>What changed in this project since the previous known-good state?</p>
+</div>
+
+<div class="evidence-line">
+<span>RETRIEVE</span>
+<p>Relevant project history and state observations are located.</p>
+</div>
+
+<div class="evidence-line">
+<span>CONTEXT</span>
+<p>The retrieved evidence is supplied to the local model with the question.</p>
+</div>
+
+<div class="evidence-line">
+<span>INFERENCE</span>
+<p>The model analyzes the question using the supplied project context.</p>
+</div>
+
+<div class="evidence-result">
+<span>RESPONSE</span>
+<p>
+The user receives a contextual answer based on retrieved project
+knowledge rather than model memory alone.
+</p>
+</div>
+
+</div>
+
+<p class="case-note">
+The example illustrates the platform architecture rather than
+representing a specific production environment.
+</p>
+
+</div>
+</section>
+
+
+<!-- CHALLENGES -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">11 / ENGINEERING CHALLENGES</p>
+<h2>AI systems introduce different operational problems.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<h3>Retrieval Quality</h3>
+<p>
+Relevant context must be found without overwhelming the model
+with unrelated material.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Context Size</h3>
+<p>
+Retrieved information must fit within practical model context
+limits while preserving useful evidence.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Inference Performance</h3>
+<p>
+Model size, hardware and context length directly affect local
+response latency.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Long-Running Jobs</h3>
+<p>
+Multi-model operations require job state and progress rather
+than a simple synchronous request.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Changing Knowledge</h3>
+<p>
+Indexed knowledge needs a strategy for detecting and incorporating
+updated technical state.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Model Evaluation</h3>
+<p>
+A larger model is not automatically the best choice for every
+task, making comparative testing useful.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- DEVELOPMENT -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">12 / DEVELOPMENT</p>
+<h2>From local inference to persistent technical intelligence.</h2>
+</div>
+
+<div class="case-timeline">
+
+<div>
+<span>FOUNDATION</span>
+<h3>Local Model Infrastructure</h3>
+<p>
+Established local Ollama inference and multiple Qwen-family models.
+</p>
+</div>
+
+<div>
+<span>KNOWLEDGE</span>
+<h3>RAG & Semantic Retrieval</h3>
+<p>
+Added embeddings, semantic search and retrieved context for
+knowledge-grounded responses.
+</p>
+</div>
+
+<div>
+<span>INTELLIGENCE</span>
+<h3>Activity & State Tracking</h3>
+<p>
+Expanded the platform with persistent activity and system-state
+collection.
+</p>
+</div>
+
+<div>
+<span>CURRENT</span>
+<h3>Background Model Comparison</h3>
+<p>
+Separated multi-model comparison from the fast interactive path
+and moved longer analysis into background processing.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- LESSONS -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">13 / LESSONS</p>
+<h2>The useful system exists around the LLM.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Running a language model locally is only the beginning. The larger
+engineering problem is deciding what knowledge the model receives,
+how that knowledge is retrieved, how changes are tracked and how
+long-running inference is managed.
+</p>
+
+<p>
+The project shifted my focus from experimenting with individual
+models toward designing the systems required to make those models
+useful in a persistent technical environment.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Core Principle</strong>
+<p>
+The model generates the answer. The surrounding platform determines
+what the model knows, what evidence it receives and how useful that
+answer can become.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- STATUS -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">14 / CURRENT STATUS</p>
+<h2>Active Development</h2>
+</div>
+
+<p class="section-intro">
+Current development focuses on background model comparison,
+persistent project intelligence, improved retrieval and expanding
+the platform's ability to reason over changing technical state.
+</p>
+
+<div class="case-links">
+<a href="../security-assessment-platform/">← Security Assessment Platform</a>
+<a href="../">All Projects →</a>
+</div>
+
+</div>
+</section>
+
+</main>
+
+
+<footer>
+<div class="container footer-content">
+
+<div>
+<strong>Philip Larussa</strong>
+<p>Technology Leadership • Cybersecurity • Engineering</p>
+</div>
+
+<div>
+<a href="../../">Home</a>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

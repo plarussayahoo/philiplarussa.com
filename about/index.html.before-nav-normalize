@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Philip Larussa</title>
+
+    <meta name="description"
+          content="About Philip Larussa — technology leader with experience across infrastructure, cybersecurity, cloud, networking, engineering, automation and AI.">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+
+        <a class="brand" href="../">
+            PHILIP <span>LARUSSA</span>
+        </a>
+
+        <nav>
+            <a href="../about/">About</a>
+            <a href="../experience/">Experience</a>
+            <a href="../projects/">Projects</a>
+            <a href="../skills/">Skills</a>
+            <a href="../training/">Training</a>
+            <a href="../military/">Military</a>
+            <a href="../resume/">Resume</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="page-hero">
+
+<div class="container narrow">
+
+<p class="eyebrow">ABOUT</p>
+
+<h1>Technology leadership built on engineering.</h1>
+
+<p class="hero-description">
+    I am a technology leader whose career has developed from
+    electronics and systems troubleshooting into enterprise
+    infrastructure, networking, cybersecurity, cloud platforms,
+    software automation and AI engineering.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PROFILE -->
+
+<section class="section">
+
+<div class="container about-layout">
+
+<div>
+
+<p class="section-label">PROFESSIONAL PROFILE</p>
+
+<h2>I lead technology because I understand how it works.</h2>
+
+</div>
+
+<div class="about-copy">
+
+<p class="about-lead">
+    My career has been built around understanding complex systems,
+    determining how they are supposed to behave, and finding the
+    evidence that explains why they do not.
+</p>
+
+<p>
+    That approach began with electronics, signal processing and
+    sonar systems in the United States Navy. It continued through
+    enterprise technical support, network administration,
+    infrastructure engineering and technology management.
+</p>
+
+<p>
+    Today, my work spans infrastructure, cybersecurity, identity,
+    cloud platforms, enterprise applications and technology
+    operations. I remain directly involved in architecture,
+    troubleshooting and technical investigations while also
+    leading teams, projects, vendors and technology initiatives.
+</p>
+
+<p>
+    Increasingly, I also build software and automation to solve
+    the operational problems I encounter. Python, PowerShell,
+    containers, Kubernetes and local AI platforms have become
+    extensions of the same engineering approach I have used
+    throughout my career.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROGRESSION -->
+
+<section class="section alt">
+
+<div class="container">
+
+<p class="section-label">TECHNICAL PROGRESSION</p>
+
+<h2>From troubleshooting systems to building systems that troubleshoot systems.</h2>
+
+
+<div class="career-evolution">
+
+<div class="evolution-step">
+
+<span>01</span>
+
+<small>FOUNDATION</small>
+
+<h3>Electronics & Signal Processing</h3>
+
+<p>
+    Navy technical training established a foundation in electronics,
+    electrical troubleshooting, signal flow, technical documentation,
+    test equipment and complex sensor systems.
+</p>
+
+</div>
+
+
+<div class="evolution-arrow">→</div>
+
+
+<div class="evolution-step">
+
+<span>02</span>
+
+<small>ENTERPRISE IT</small>
+
+<h3>Systems & Networking</h3>
+
+<p>
+    Enterprise support developed into Windows administration,
+    networking, servers, virtualization, identity, applications
+    and infrastructure troubleshooting.
+</p>
+
+</div>
+
+
+<div class="evolution-arrow">→</div>
+
+
+<div class="evolution-step">
+
+<span>03</span>
+
+<small>LEADERSHIP</small>
+
+<h3>Technology Operations</h3>
+
+<p>
+    Technical responsibility expanded into infrastructure leadership,
+    teams, vendors, budgets, major incidents, enterprise migrations
+    and technology strategy.
+</p>
+
+</div>
+
+
+<div class="evolution-arrow">→</div>
+
+
+<div class="evolution-step">
+
+<span>04</span>
+
+<small>SECURITY & CLOUD</small>
+
+<h3>Modern Enterprise Platforms</h3>
+
+<p>
+    Infrastructure work expanded further into cybersecurity,
+    identity security, Azure, Microsoft cloud services,
+    security assessments and modern application platforms.
+</p>
+
+</div>
+
+
+<div class="evolution-arrow">→</div>
+
+
+<div class="evolution-step">
+
+<span>05</span>
+
+<small>ENGINEERING</small>
+
+<h3>Automation & AI</h3>
+
+<p>
+    Operational experience now drives development of diagnostic,
+    investigation and automation platforms using software,
+    containers, Kubernetes and local AI.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ENGINEERING PHILOSOPHY -->
+
+<section class="section">
+
+<div class="container">
+
+<p class="section-label">ENGINEERING APPROACH</p>
+
+<h2>Follow the signal.</h2>
+
+<p class="section-intro">
+    Whether the problem involves an electronic circuit, a TCP
+    connection, an authentication token, a Kubernetes workload,
+    a security event or an application failure, my troubleshooting
+    process follows the same basic principles.
+</p>
+
+
+<div class="method-grid">
+
+<div class="method-card">
+<span>01</span>
+<h3>Understand</h3>
+<p>
+Understand the architecture and the relationships between
+the components involved.
+</p>
+</div>
+
+
+<div class="method-card">
+<span>02</span>
+<h3>Establish</h3>
+<p>
+Determine what normal or expected behavior should look like.
+</p>
+</div>
+
+
+<div class="method-card">
+<span>03</span>
+<h3>Observe</h3>
+<p>
+Gather logs, packets, telemetry, system state and other
+evidence before drawing conclusions.
+</p>
+</div>
+
+
+<div class="method-card">
+<span>04</span>
+<h3>Trace</h3>
+<p>
+Follow the signal path through the systems involved and
+identify where behavior changes.
+</p>
+</div>
+
+
+<div class="method-card">
+<span>05</span>
+<h3>Isolate</h3>
+<p>
+Reduce the problem until the responsible component,
+configuration or behavior can be identified.
+</p>
+</div>
+
+
+<div class="method-card">
+<span>06</span>
+<h3>Verify</h3>
+<p>
+Correct the issue, validate the result and preserve
+what was learned for the next investigation.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LEADERSHIP + ENGINEERING -->
+
+<section class="section alt">
+
+<div class="container about-layout">
+
+<div>
+
+<p class="section-label">LEADERSHIP + ENGINEERING</p>
+
+<h2>Strategy and implementation should inform each other.</h2>
+
+</div>
+
+
+<div class="about-copy">
+
+<p class="about-lead">
+    I do not view technical leadership and hands-on engineering
+    as separate disciplines.
+</p>
+
+<p>
+    Understanding the architecture makes technology decisions
+    stronger. Understanding operations makes architecture more
+    realistic. Understanding security makes infrastructure more
+    resilient. And understanding the people operating those systems
+    makes automation more useful.
+</p>
+
+<p>
+    That is why I continue to work directly with logs, packet
+    captures, authentication flows, infrastructure, cloud services,
+    code and diagnostic tools while also working at the
+    organizational and strategic level.
+</p>
+
+<p>
+    The goal is not to be the person performing every technical
+    task. The goal is to understand technology deeply enough to
+    ask better questions, make better decisions, help engineers
+    solve difficult problems and build systems that improve how
+    the organization operates.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CURRENT WORK -->
+
+<section class="section">
+
+<div class="container">
+
+<p class="section-label">CURRENT FOCUS</p>
+
+<h2>What I work on today.</h2>
+
+
+<div class="focus-grid">
+
+
+<div class="focus-card">
+
+<span>01</span>
+
+<h3>Technology Leadership</h3>
+
+<p>
+Infrastructure operations, technology strategy, teams,
+vendors, modernization, service delivery and major
+technical initiatives.
+</p>
+
+<a href="../experience/">View experience →</a>
+
+</div>
+
+
+<div class="focus-card">
+
+<span>02</span>
+
+<h3>Cybersecurity</h3>
+
+<p>
+Security assessment, application security, DAST,
+investigation, identity security, WAF engineering,
+network analysis and security governance.
+</p>
+
+<a href="../skills/">View security capabilities →</a>
+
+</div>
+
+
+<div class="focus-card">
+
+<span>03</span>
+
+<h3>Infrastructure & Cloud</h3>
+
+<p>
+Microsoft platforms, Azure, networking, identity,
+virtualization, Kubernetes and enterprise application
+infrastructure.
+</p>
+
+<a href="../skills/">View technical skills →</a>
+
+</div>
+
+
+<div class="focus-card">
+
+<span>04</span>
+
+<h3>Engineering & Automation</h3>
+
+<p>
+Python, PowerShell and containerized tools that improve
+investigation, diagnostics, visibility and infrastructure
+operations.
+</p>
+
+<a href="../projects/">View projects →</a>
+
+</div>
+
+
+<div class="focus-card">
+
+<span>05</span>
+
+<h3>Artificial Intelligence</h3>
+
+<p>
+Local language models, RAG, semantic retrieval,
+AI-assisted analysis and private AI infrastructure
+for technical workflows.
+</p>
+
+<a href="../projects/">View AI projects →</a>
+
+</div>
+
+
+<div class="focus-card">
+
+<span>06</span>
+
+<h3>Continuous Technical Development</h3>
+
+<p>
+Advanced security training, hands-on labs,
+engineering projects and continuous exploration
+of new infrastructure and security technologies.
+</p>
+
+<a href="../training/">View training →</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CLOSING -->
+
+<section class="section alt">
+
+<div class="container narrow about-closing">
+
+<p class="section-label">THE COMMON THREAD</p>
+
+<h2>Understand the system. Follow the evidence. Improve the system.</h2>
+
+<p>
+The technologies have changed throughout my career, but the
+approach has remained remarkably consistent: understand how
+the system works, determine what the evidence is telling you,
+solve the immediate problem and use what you learned to make
+the system better.
+</p>
+
+<div class="about-links">
+
+<a href="../experience/">Experience →</a>
+<a href="../projects/">Projects →</a>
+<a href="../skills/">Skills →</a>
+<a href="../military/">Military →</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<div class="container footer-content">
+
+<div>
+<strong>Philip Larussa</strong>
+<p>Technology Leadership • Cybersecurity • Engineering</p>
+</div>
+
+<div>
+<a href="../">Home</a>
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>

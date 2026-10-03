@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skills | Philip Larussa</title>
+
+    <meta name="description"
+          content="Leadership and technical capabilities across cybersecurity, infrastructure, cloud, identity, networking, software engineering, automation and AI.">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+        <a class="brand" href="../">PHILIP <span>LARUSSA</span></a>
+
+        <nav>
+            <a href="../about/">About</a>
+            <a href="../experience/">Experience</a>
+            <a href="../projects/">Projects</a>
+            <a href="../skills/">Skills</a>
+            <a href="../training/">Training</a>
+            <a href="../military/">Military</a>
+            <a href="../resume/">Resume</a>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+
+<section class="page-hero">
+    <div class="container narrow">
+
+        <p class="eyebrow">TECHNICAL CAPABILITIES</p>
+
+        <h1>Skills</h1>
+
+        <p class="hero-description">
+            Leadership backed by hands-on engineering across cybersecurity,
+            infrastructure, identity, cloud, networking, software,
+            automation and AI.
+        </p>
+
+    </div>
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+<p class="section-label">CORE CAPABILITIES</p>
+
+<h2>Experience demonstrated through real systems.</h2>
+
+<p class="section-intro">
+    Rather than a flat list of technologies, these capabilities represent
+    areas where I have operated, engineered, secured, investigated,
+    automated or led technology environments.
+</p>
+
+
+<div class="skill-domain-grid">
+
+
+<!-- LEADERSHIP -->
+
+<article class="skill-domain">
+
+<div class="skill-domain-number">01</div>
+
+<h3>Technology Leadership</h3>
+
+<p>
+    Leading technology operations, teams, vendors, projects and
+    modernization initiatives while remaining directly involved
+    in architecture and complex technical problem solving.
+</p>
+
+<div class="skill-list">
+    <span>Technology Strategy</span>
+    <span>Strategic Planning</span>
+    <span>Team Leadership</span>
+    <span>Project Planning</span>
+    <span>Budget Management</span>
+    <span>Vendor Management</span>
+    <span>Service Delivery</span>
+    <span>Incident Leadership</span>
+    <span>Change Management</span>
+    <span>Disaster Recovery</span>
+</div>
+
+<div class="skill-evidence">
+<strong>Developed through</strong>
+<p>
+    Enterprise technology leadership, infrastructure operations,
+    security programs, modernization initiatives and major migrations.
+</p>
+</div>
+
+</article>
+
+
+
+<!-- SECURITY -->
+
+<article class="skill-domain security-domain">
+
+<div class="skill-domain-number">02</div>
+
+<h3>Cybersecurity</h3>
+
+<p>
+    Security assessment, engineering, investigation and governance
+    across applications, identities, endpoints, networks, cloud
+    platforms and enterprise infrastructure.
+</p>
+
+
+<h4 class="skill-subheading">
+    Offensive Security & Assessment
+</h4>
+
+<div class="skill-list">
+    <span>Penetration Testing</span>
+    <span>Penetration Testing Program Management</span>
+    <span>Web Application Security Testing</span>
+    <span>DAST</span>
+    <span>DAST Implementation</span>
+    <span>DAST Findings Review</span>
+    <span>Vulnerability Assessment</span>
+    <span>Vulnerability Validation</span>
+    <span>Attack Surface Analysis</span>
+    <span>Reconnaissance</span>
+    <span>OWASP Testing</span>
+    <span>OWASP ZAP</span>
+    <span>Nmap</span>
+    <span>HTTP/TLS Testing</span>
+    <span>Security Control Validation</span>
+</div>
+
+
+<h4 class="skill-subheading">
+    Defensive Security & Investigation
+</h4>
+
+<div class="skill-list">
+    <span>Incident Response</span>
+    <span>Security Investigation</span>
+    <span>Threat Hunting</span>
+    <span>Evidence Correlation</span>
+    <span>Network Traffic Analysis</span>
+    <span>Packet Analysis</span>
+    <span>Malware Traffic Analysis</span>
+    <span>Log Analysis</span>
+    <span>SIEM</span>
+    <span>Microsoft Defender XDR</span>
+    <span>Advanced Hunting</span>
+    <span>KQL</span>
+    <span>FortiAnalyzer</span>
+    <span>IP Intelligence</span>
+</div>
+
+
+<h4 class="skill-subheading">
+    Security Engineering
+</h4>
+
+<div class="skill-list">
+    <span>WAF Engineering</span>
+    <span>Azure Front Door WAF</span>
+    <span>Firewall Security</span>
+    <span>Endpoint Security</span>
+    <span>Identity Security</span>
+    <span>MFA</span>
+    <span>Authentication Security</span>
+    <span>Security Monitoring</span>
+    <span>Application Security</span>
+    <span>Cloud Security</span>
+    <span>Container Security</span>
+    <span>Security Architecture</span>
+    <span>System Hardening</span>
+    <span>Security Automation</span>
+</div>
+
+
+<h4 class="skill-subheading">
+    Governance, Risk & Resilience
+</h4>
+
+<div class="skill-list">
+    <span>ISO 27001</span>
+    <span>NIST</span>
+    <span>SOC 2 Vendor Assurance</span>
+    <span>Third-Party Risk</span>
+    <span>Vendor Security Assessment</span>
+    <span>Security Policy</span>
+    <span>Security Controls</span>
+    <span>Risk Assessment</span>
+    <span>Vulnerability Management</span>
+    <span>Incident Management</span>
+    <span>Disaster Recovery</span>
+    <span>Business Continuity</span>
+    <span>Security Awareness</span>
+</div>
+
+
+<div class="skill-evidence">
+<strong>Demonstrated through</strong>
+
+<p>
+    Security assessment and penetration-testing programs,
+    DAST implementation and findings review, application-security
+    testing, vulnerability analysis, Defender investigations,
+    network and packet analysis, WAF engineering, identity security,
+    third-party risk management and security governance programs.
+</p>
+
+</div>
+
+</article>
+
+
+
+<!-- IDENTITY -->
+
+<article class="skill-domain">
+
+<div class="skill-domain-number">03</div>
+
+<h3>Identity & Microsoft Platforms</h3>
+
+<p>
+    Enterprise Microsoft infrastructure and authentication spanning
+    traditional Active Directory through federation and cloud identity.
+</p>
+
+<div class="skill-list">
+    <span>Active Directory</span>
+    <span>AD FS</span>
+    <span>Entra ID</span>
+    <span>Windows Server</span>
+    <span>Microsoft 365</span>
+    <span>Exchange</span>
+    <span>SharePoint</span>
+    <span>Intune</span>
+    <span>Microsoft Defender</span>
+    <span>Group Policy</span>
+    <span>Kerberos</span>
+    <span>NTLM</span>
+    <span>SAML</span>
+    <span>OAuth 2.0</span>
+    <span>OpenID Connect</span>
+    <span>WS-Federation</span>
+    <span>MFA</span>
+</div>
+
+<div class="skill-evidence">
+<strong>Demonstrated through</strong>
+
+<p>
+    Federation migrations, Microsoft 365 migrations,
+    authentication troubleshooting, enterprise application integration
+    and identity-security engineering.
+</p>
+</div>
+
+</article>
+
+
+
+<!-- CLOUD -->
+
+<article class="skill-domain">
+
+<div class="skill-domain-number">04</div>
+
+<h3>Cloud & Infrastructure</h3>
+
+<p>
+    Architecture and operations across datacenter, virtualization
+    and Microsoft Azure environments.
+</p>
+
+<div class="skill-list">
+    <span>Microsoft Azure</span>
+    <span>Azure Front Door</span>
+    <span>Azure WAF</span>
+    <span>Azure SQL</span>
+    <span>Azure Storage</span>
+    <span>Azure Monitor</span>
+    <span>Log Analytics</span>
+    <span>Event Hub</span>
+    <span>Hyper-V</span>
+    <span>VMware</span>
+    <span>Server Migration</span>
+    <span>Storage</span>
+    <span>Backup</span>
+    <span>High Availability</span>
+</div>
+
+<div class="skill-evidence">
+<strong>Demonstrated through</strong>
+
+<p>
+    Production infrastructure operations, Azure engineering,
+    cloud migrations, disaster recovery and infrastructure modernization.
+</p>
+</div>
+
+</article>
+
+
+
+<!-- NETWORKING -->
+
+<article class="skill-domain">
+
+<div class="skill-domain-number">05</div>
+
+<h3>Networking</h3>
+
+<p>
+    Network administration and engineering from infrastructure
+    architecture through packet-level troubleshooting.
+</p>
+
+<div class="skill-list">
+    <span>Network Engineering</span>
+    <span>Network Administration</span>
+    <span>Network Design</span>
+    <span>TCP/IP</span>
+    <span>DNS</span>
+    <span>DHCP</span>
+    <span>Routing</span>
+    <span>NAT</span>
+    <span>VLANs</span>
+    <span>SD-WAN</span>
+    <span>VPN</span>
+    <span>Firewalls</span>
+    <span>TLS</span>
+    <span>HTTP</span>
+    <span>Wireshark</span>
+    <span>TShark</span>
+    <span>Packet Analysis</span>
+</div>
+
+<div class="skill-evidence">
+<strong>Demonstrated through</strong>
+
+<p>
+    Network operations, infrastructure troubleshooting,
+    packet analysis, firewall investigations, application traffic
+    analysis and cloud networking.
+</p>
+</div>
+
+</article>
+
+
+
+<!-- SOFTWARE -->
+
+<article class="skill-domain">
+
+<div class="skill-domain-number">06</div>
+
+<h3>Software & Automation</h3>
+
+<p>
+    Building operational software and automation to investigate,
+    manage and understand infrastructure and security environments.
+</p>
+
+<div class="skill-list">
+    <span>Python</span>
+    <span>PowerShell</span>
+    <span>FastAPI</span>
+    <span>SQL</span>
+    <span>SQLite</span>
+    <span>REST APIs</span>
+    <span>JSON</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Git</span>
+    <span>GitHub</span>
+    <span>Automation</span>
+</div>
+
+<div class="skill-evidence">
+<strong>Demonstrated through</strong>
+
+<p>
+    Diagnostic applications, investigation consoles,
+    security tooling, infrastructure automation and operational platforms.
+</p>
+</div>
+
+</article>
+
+
+
+<!-- DEVOPS -->
+
+<article class="skill-domain">
+
+<div class="skill-domain-number">07</div>
+
+<h3>Containers & DevOps</h3>
+
+<p>
+    Containerized application development and Kubernetes
+    infrastructure with an emphasis on operations and troubleshooting.
+</p>
+
+<div class="skill-list">
+    <span>Kubernetes</span>
+    <span>AKS</span>
+    <span>Docker</span>
+    <span>Helm</span>
+    <span>NGINX Ingress</span>
+    <span>Azure DevOps</span>
+    <span>CI/CD</span>
+    <span>Terraform</span>
+    <span>YAML</span>
+    <span>GitHub Actions</span>
+</div>
+
+<div class="skill-evidence">
+<strong>Demonstrated through</strong>
+
+<p>
+    Kubernetes operations tooling, containerized engineering
+    applications, Kubernetes labs and deployment troubleshooting.
+</p>
+</div>
+
+</article>
+
+
+
+<!-- AI -->
+
+<article class="skill-domain">
+
+<div class="skill-domain-number">08</div>
+
+<h3>AI Engineering</h3>
+
+<p>
+    Developing local AI infrastructure and applying language models
+    to knowledge retrieval, technical analysis and engineering workflows.
+</p>
+
+<div class="skill-list">
+    <span>Local LLMs</span>
+    <span>Qwen</span>
+    <span>Ollama</span>
+    <span>RAG</span>
+    <span>Embeddings</span>
+    <span>Semantic Search</span>
+    <span>Vector Retrieval</span>
+    <span>Model Evaluation</span>
+    <span>AI-Assisted Analysis</span>
+</div>
+
+<div class="skill-evidence">
+<strong>Demonstrated through</strong>
+
+<p>
+    Private AI infrastructure, knowledge retrieval systems,
+    local model hosting and model-comparison experimentation.
+</p>
+</div>
+
+</article>
+
+
+
+<!-- COMMUNICATIONS -->
+
+<article class="skill-domain">
+
+<div class="skill-domain-number">09</div>
+
+<h3>Enterprise Communications</h3>
+
+<p>
+    Operating and modernizing enterprise voice and
+    unified-communications environments.
+</p>
+
+<div class="skill-list">
+    <span>VoIP</span>
+    <span>Avaya Aura</span>
+    <span>Avaya Communication Manager</span>
+    <span>Avaya Site Administration</span>
+    <span>Session Border Controllers</span>
+    <span>RingCentral</span>
+    <span>Cloud Communications</span>
+</div>
+
+<div class="skill-evidence">
+<strong>Demonstrated through</strong>
+
+<p>
+    Enterprise Avaya operations and migration from
+    on-premises communications infrastructure to cloud communications.
+</p>
+</div>
+
+</article>
+
+
+
+<!-- FOUNDATION -->
+
+<article class="skill-domain">
+
+<div class="skill-domain-number">10</div>
+
+<h3>Technical Foundations</h3>
+
+<p>
+    Electronics and systems troubleshooting formed the original
+    technical foundation for later infrastructure and engineering work.
+</p>
+
+<div class="skill-list">
+    <span>Electrical Troubleshooting</span>
+    <span>Electronics</span>
+    <span>Signal Processing</span>
+    <span>Spectrum Analysis</span>
+    <span>Sonar Systems</span>
+    <span>Technical Documentation</span>
+    <span>Fault Isolation</span>
+    <span>System Diagnostics</span>
+</div>
+
+<div class="skill-evidence">
+<strong>Developed through</strong>
+
+<p>
+    Navy electronics and sonar training, operational maintenance
+    and lead-technician responsibilities.
+</p>
+</div>
+
+</article>
+
+
+</div>
+</div>
+</section>
+
+
+<section class="section alt">
+
+<div class="container">
+
+<p class="section-label">CAPABILITY MODEL</p>
+
+<h2>How the disciplines connect.</h2>
+
+
+<div class="capability-flow">
+
+<div>
+<small>FOUNDATION</small>
+<strong>Understand</strong>
+<p>Learn how the system actually works.</p>
+</div>
+
+<div class="capability-arrow">→</div>
+
+<div>
+<small>OPERATIONS</small>
+<strong>Troubleshoot</strong>
+<p>Determine why behavior differs from expectation.</p>
+</div>
+
+<div class="capability-arrow">→</div>
+
+<div>
+<small>SECURITY</small>
+<strong>Protect</strong>
+<p>Understand how the system can fail or be attacked.</p>
+</div>
+
+<div class="capability-arrow">→</div>
+
+<div>
+<small>ENGINEERING</small>
+<strong>Build</strong>
+<p>Create better ways to operate and investigate it.</p>
+</div>
+
+<div class="capability-arrow">→</div>
+
+<div>
+<small>LEADERSHIP</small>
+<strong>Scale</strong>
+<p>Turn technical capability into organizational capability.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+</main>
+
+
+<footer>
+<div class="container footer-content">
+
+<div>
+<strong>Philip Larussa</strong>
+<p>Technology Leadership • Cybersecurity • Engineering</p>
+</div>
+
+<div>
+<a href="../">Home</a>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

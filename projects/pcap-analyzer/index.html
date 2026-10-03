@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PCAP Analyzer | Philip Larussa</title>
+
+    <meta name="description"
+          content="PCAP Analyzer engineering case study: evidence-driven TCP and packet-capture investigation using Python, FastAPI, TShark and Docker.">
+
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container nav-container">
+
+<a class="brand" href="../../">PHILIP <span>LARUSSA</span></a>
+
+<nav>
+<a href="../../about/">About</a>
+<a href="../../experience/">Experience</a>
+<a href="../../projects/">Projects</a>
+<a href="../../skills/">Skills</a>
+<a href="../../training/">Training</a>
+<a href="../../military/">Military</a>
+<a href="../../resume/">Resume</a>
+</nav>
+
+</div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="case-hero">
+<div class="container">
+
+<a class="case-back" href="../">← Projects</a>
+
+<p class="eyebrow">NETWORK ENGINEERING • ACTIVE DEVELOPMENT</p>
+
+<h1>PCAP Analyzer</h1>
+
+<p class="case-lead">
+An evidence-driven network investigation platform that transforms
+packet captures into structured TCP connection analysis while
+preserving the packet-level evidence behind each conclusion.
+</p>
+
+<div class="case-tech">
+<span>Python</span>
+<span>FastAPI</span>
+<span>TShark</span>
+<span>Docker</span>
+<span>TCP/IP</span>
+<span>Packet Analysis</span>
+</div>
+
+</div>
+</section>
+
+
+<!-- OVERVIEW -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">01 / OVERVIEW</p>
+<h2>Turning packet captures into investigations.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Packet captures contain enormous amounts of diagnostic evidence,
+but answering a seemingly simple question such as
+“what happened to this connection?” can require manually following
+TCP streams, flags, sequence behavior and endpoint activity.
+</p>
+
+<p>
+PCAP Analyzer was created to automate that investigative process
+without replacing the underlying evidence.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Engineering Objective</strong>
+<p>
+Reduce the time required to investigate network behavior while
+keeping every assessment explainable from observable packet data.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- PROBLEM -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">02 / PROBLEM</p>
+<h2>Network failures rarely explain themselves.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<span>01</span>
+<h3>Large Captures</h3>
+<p>
+A single PCAP can contain thousands of packets and many unrelated
+connections, making manual inspection slow.
+</p>
+</div>
+
+<div class="case-card">
+<span>02</span>
+<h3>Partial Behavior</h3>
+<p>
+Connections do not always complete a clean TCP lifecycle.
+SYN-only attempts, resets and incomplete handshakes require context.
+</p>
+</div>
+
+<div class="case-card">
+<span>03</span>
+<h3>Evidence vs. Assumption</h3>
+<p>
+A troubleshooting tool should distinguish what the packets
+demonstrate from what an analyst might infer.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ARCHITECTURE -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">03 / ARCHITECTURE</p>
+<h2>From raw capture to evidence-backed assessment.</h2>
+</div>
+
+<div class="architecture-flow">
+
+<div>
+<span>01</span>
+<strong>PCAP</strong>
+<small>Captured network traffic</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>02</span>
+<strong>TShark</strong>
+<small>Packet and protocol extraction</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>03</span>
+<strong>Python Analysis</strong>
+<small>Connection reconstruction</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>04</span>
+<strong>FastAPI</strong>
+<small>Application and investigation layer</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>05</span>
+<strong>Evidence View</strong>
+<small>Assessment and drill-down</small>
+</div>
+
+</div>
+
+<p class="architecture-note">
+The analyzer treats packet evidence as the source of truth.
+Higher-level classifications are generated from observable
+connection behavior rather than hidden assumptions.
+</p>
+
+</div>
+</section>
+
+
+<!-- WORKFLOW -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">04 / INVESTIGATION WORKFLOW</p>
+<h2>Follow the connection from attempt to termination.</h2>
+</div>
+
+<div class="workflow-list">
+
+<div class="workflow-step">
+<span>01</span>
+<div>
+<h3>Ingest Capture</h3>
+<p>
+Load a packet capture and extract the protocol fields needed
+for connection analysis.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>02</span>
+<div>
+<h3>Identify TCP Streams</h3>
+<p>
+Group packets into conversations so each connection can be
+analyzed independently.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>03</span>
+<div>
+<h3>Reconstruct Handshake Behavior</h3>
+<p>
+Evaluate SYN and SYN-ACK behavior to determine whether connection
+establishment is observable in the capture.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>04</span>
+<div>
+<h3>Analyze Connection Events</h3>
+<p>
+Inspect retransmissions, resets, FIN behavior and other
+connection-state evidence.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>05</span>
+<div>
+<h3>Infer Endpoint Roles</h3>
+<p>
+Use connection behavior to identify likely initiating and
+responding endpoints.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>06</span>
+<div>
+<h3>Present the Evidence</h3>
+<p>
+Expose both the summarized assessment and the packet-level
+details that support it.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- CAPABILITIES -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">05 / CAPABILITIES</p>
+<h2>Connection behavior made visible.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<h3>Handshake Detection</h3>
+<p>
+Identifies observable SYN and SYN-ACK behavior associated with
+TCP connection establishment.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Partial Handshakes</h3>
+<p>
+Surfaces incomplete connection attempts instead of assuming
+every stream represents an established session.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Reset Analysis</h3>
+<p>
+Identifies TCP resets and the endpoint responsible for
+initiating the reset when supported by the capture.
+</p>
+</div>
+
+<div class="case-card">
+<h3>FIN Analysis</h3>
+<p>
+Examines graceful connection-termination behavior and participating
+endpoints.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Retransmissions</h3>
+<p>
+Surfaces retransmission evidence that can help explain
+connection-quality or delivery problems.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Endpoint Roles</h3>
+<p>
+Infers likely client/server or initiator/responder roles from
+observable TCP behavior.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Stream Drill-Down</h3>
+<p>
+Allows an investigator to move from the overall capture into
+the evidence associated with an individual TCP stream.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Connection Assessment</h3>
+<p>
+Produces structured assessments based on observed packet
+behavior rather than generic failure labels.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Evidence Preservation</h3>
+<p>
+Keeps the supporting packet observations visible so conclusions
+can be independently reviewed.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ENGINEERING DECISIONS -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">06 / ENGINEERING DECISIONS</p>
+<h2>Designed for explainability.</h2>
+</div>
+
+<div class="decision-list">
+
+<div>
+<h3>Evidence before classification.</h3>
+<p>
+The application records observable connection behavior before
+assigning a higher-level assessment.
+</p>
+</div>
+
+<div>
+<h3>Do not treat missing packets as facts.</h3>
+<p>
+Packet captures can begin late, end early or miss traffic.
+The analysis therefore distinguishes absence of evidence from
+evidence that an event did not occur.
+</p>
+</div>
+
+<div>
+<h3>Preserve stream-level context.</h3>
+<p>
+Summary views accelerate investigation, but analysts must still
+be able to inspect the individual stream supporting a result.
+</p>
+</div>
+
+<div>
+<h3>Separate endpoint identity from endpoint role.</h3>
+<p>
+IP addresses and ports identify endpoints; TCP behavior helps
+determine which endpoint initiated or responded to the connection.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- EXAMPLE -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">07 / EXAMPLE ANALYSIS</p>
+<h2>From packets to a defensible statement.</h2>
+</div>
+
+<div class="evidence-example">
+
+<div class="evidence-line">
+<span>OBSERVED</span>
+<p>Endpoint A transmits a SYN to Endpoint B.</p>
+</div>
+
+<div class="evidence-line">
+<span>OBSERVED</span>
+<p>Endpoint B responds with SYN-ACK.</p>
+</div>
+
+<div class="evidence-line">
+<span>OBSERVED</span>
+<p>Subsequent bidirectional traffic is present.</p>
+</div>
+
+<div class="evidence-line">
+<span>OBSERVED</span>
+<p>Endpoint B later transmits a TCP RST.</p>
+</div>
+
+<div class="evidence-result">
+<span>ASSESSMENT</span>
+<p>
+The capture contains evidence of connection establishment and
+shows the responding endpoint later initiating a reset.
+</p>
+</div>
+
+</div>
+
+<p class="case-note">
+This is an illustrative workflow rather than data from an actual
+production investigation.
+</p>
+
+</div>
+</section>
+
+
+<!-- CHALLENGES -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">08 / ENGINEERING CHALLENGES</p>
+<h2>The difficult part is interpretation.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<h3>Incomplete Captures</h3>
+<p>
+The absence of a handshake packet does not necessarily prove
+the handshake never occurred.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Connection Classification</h3>
+<p>
+TCP flags need to be interpreted as a sequence of events rather
+than isolated packet attributes.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Role Identification</h3>
+<p>
+Endpoint roles must be inferred from behavior rather than
+assuming that a particular IP or port always represents a client
+or server.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- EVOLUTION -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">09 / DEVELOPMENT</p>
+<h2>Iterative engineering.</h2>
+</div>
+
+<div class="case-timeline">
+
+<div>
+<span>FOUNDATION</span>
+<h3>Capture & Stream Analysis</h3>
+<p>
+Established packet ingestion, TCP stream identification and
+investigation views.
+</p>
+</div>
+
+<div>
+<span>CONNECTION INTELLIGENCE</span>
+<h3>TCP Lifecycle Analysis</h3>
+<p>
+Expanded analysis around handshake behavior, resets,
+termination and endpoint roles.
+</p>
+</div>
+
+<div>
+<span>CURRENT</span>
+<h3>Evidence-Based Assessments</h3>
+<p>
+Improving connection classifications and the evidence presented
+to explain each result.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- LESSONS -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">10 / LESSONS</p>
+<h2>What this project reinforces.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Network troubleshooting improves when observations,
+interpretations and conclusions are treated as separate layers.
+</p>
+
+<p>
+Automation is most useful when it accelerates the analyst's
+reasoning without removing the ability to inspect the original
+technical evidence.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Core Principle</strong>
+<p>
+The tool should help an engineer reach the evidence faster—not
+ask the engineer to blindly trust the tool.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- STATUS -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">11 / CURRENT STATUS</p>
+<h2>Active Development</h2>
+</div>
+
+<p class="section-intro">
+PCAP Analyzer remains an active engineering project focused on
+improving TCP investigation, connection classification and
+evidence presentation.
+</p>
+
+<div class="case-links">
+<a href="../">← All Projects</a>
+<a href="../../skills/">Technical Skills →</a>
+</div>
+
+</div>
+</section>
+
+</main>
+
+
+<footer>
+<div class="container footer-content">
+
+<div>
+<strong>Philip Larussa</strong>
+<p>Technology Leadership • Cybersecurity • Engineering</p>
+</div>
+
+<div>
+<a href="../../">Home</a>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Windows Diagnostic Toolkit | Philip Larussa</title>
+
+<meta name="description"
+content="Windows Diagnostic Toolkit engineering case study covering automated evidence collection, event analysis, incident correlation, endpoint-management diagnostics and PowerShell reporting.">
+
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container nav-container">
+
+<a class="brand" href="../../">PHILIP <span>LARUSSA</span></a>
+
+<nav>
+<a href="../../about/">About</a>
+<a href="../../experience/">Experience</a>
+<a href="../../projects/">Projects</a>
+<a href="../../skills/">Skills</a>
+<a href="../../training/">Training</a>
+<a href="../../military/">Military</a>
+<a href="../../resume/">Resume</a>
+</nav>
+
+</div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="case-hero">
+<div class="container">
+
+<a class="case-back" href="../">← Projects</a>
+
+<p class="eyebrow">WINDOWS ENGINEERING • ACTIVE DEVELOPMENT</p>
+
+<h1>Windows Diagnostic Toolkit</h1>
+
+<p class="case-lead">
+A PowerShell-based diagnostic pipeline that collects Windows
+system evidence, analyzes events, correlates incidents and
+produces structured reports for technical investigation.
+</p>
+
+<div class="case-tech">
+<span>PowerShell</span>
+<span>Windows</span>
+<span>Event Logs</span>
+<span>Endpoint Management</span>
+<span>DCOM</span>
+<span>Diagnostics</span>
+<span>Automation</span>
+</div>
+
+</div>
+</section>
+
+
+<!-- OVERVIEW -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">01 / OVERVIEW</p>
+<h2>Turning troubleshooting into a repeatable pipeline.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Windows troubleshooting often requires collecting evidence from
+multiple places: event logs, system information, application
+failures, endpoint-management logs, networking state and
+configuration data.
+</p>
+
+<p>
+The Windows Diagnostic Toolkit turns that process into a structured
+pipeline so evidence can be collected consistently, analyzed
+systematically and correlated across time.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Engineering Objective</strong>
+<p>
+Move Windows troubleshooting from a collection of one-off commands
+toward a repeatable evidence-driven diagnostic workflow.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- PROBLEM -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">02 / PROBLEM</p>
+<h2>The evidence exists. Finding the relationship is harder.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<span>01</span>
+<h3>Fragmented Evidence</h3>
+<p>
+Relevant information may exist across Windows event channels,
+application logs, system state and management-agent logs.
+</p>
+</div>
+
+<div class="case-card">
+<span>02</span>
+<h3>Time Correlation</h3>
+<p>
+A visible failure may be preceded or followed by related events
+that are easy to miss when logs are reviewed independently.
+</p>
+</div>
+
+<div class="case-card">
+<span>03</span>
+<h3>Repeatability</h3>
+<p>
+Manual troubleshooting can vary between investigators and
+between incidents, making comparison more difficult.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ARCHITECTURE -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">03 / ARCHITECTURE</p>
+<h2>Collect → Analyze → Correlate → Report.</h2>
+</div>
+
+<div class="architecture-flow">
+
+<div>
+<span>01</span>
+<strong>Collect</strong>
+<small>System and diagnostic evidence</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>02</span>
+<strong>Normalize</strong>
+<small>Structured diagnostic data</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>03</span>
+<strong>Analyze</strong>
+<small>Events and patterns</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>04</span>
+<strong>Correlate</strong>
+<small>Related incidents and timing</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>05</span>
+<strong>Report</strong>
+<small>Human-readable findings</small>
+</div>
+
+</div>
+
+<p class="architecture-note">
+The toolkit separates collection from analysis. Evidence can be
+captured once and then evaluated repeatedly without requiring
+every diagnostic query to be rerun against the endpoint.
+</p>
+
+</div>
+</section>
+
+
+<!-- PIPELINE -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">04 / DIAGNOSTIC PIPELINE</p>
+<h2>A modular investigation workflow.</h2>
+</div>
+
+<div class="workflow-list">
+
+<div class="workflow-step">
+<span>01</span>
+<div>
+<h3>Collect Diagnostics</h3>
+<p>
+Gather Windows events, system information, networking state,
+application evidence and available endpoint-management logs.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>02</span>
+<div>
+<h3>Produce Structured Evidence</h3>
+<p>
+Normalize collected information into machine-readable diagnostic
+data that can be preserved and reanalyzed.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>03</span>
+<div>
+<h3>Analyze Events</h3>
+<p>
+Identify relevant failures, warnings and diagnostic patterns
+within the collected evidence.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>04</span>
+<div>
+<h3>Correlate Incidents</h3>
+<p>
+Group related observations and compare their timing to identify
+isolated, repeated, recurring or persistent behavior.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>05</span>
+<div>
+<h3>Resolve Technical Context</h3>
+<p>
+Enrich raw identifiers with information that makes the event
+meaningful to an investigator.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>06</span>
+<div>
+<h3>Generate Report</h3>
+<p>
+Transform the structured investigation into a readable report
+that preserves both findings and supporting evidence.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- CAPABILITIES -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">05 / CAPABILITIES</p>
+<h2>Evidence collection with technical context.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<h3>Windows Event Analysis</h3>
+<p>
+Collects and analyzes relevant Windows events around an
+investigation period.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Application Failures</h3>
+<p>
+Surfaces application-crash evidence and related operating-system
+events for investigation.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Endpoint Management</h3>
+<p>
+Includes available management-agent and script-execution evidence
+when diagnosing managed endpoints.
+</p>
+</div>
+
+<div class="case-card">
+<h3>DCOM Resolution</h3>
+<p>
+Transforms opaque COM identifiers into more useful application,
+service and permission context.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Network State</h3>
+<p>
+Captures networking information so endpoint behavior can be
+evaluated alongside application and operating-system evidence.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Incident Correlation</h3>
+<p>
+Groups related events and observations to expose recurring
+behavior rather than treating each event independently.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Pattern Classification</h3>
+<p>
+Distinguishes patterns such as isolated, repeated, recurring
+and persistent activity.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Problem-Time Analysis</h3>
+<p>
+Supports narrowing an investigation around the period when
+a user or system experienced the problem.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Automated Reporting</h3>
+<p>
+Produces a structured human-readable output from the collected
+and correlated diagnostic evidence.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- DCOM -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">06 / TECHNICAL ENRICHMENT</p>
+<h2>Turning identifiers into useful context.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Windows events frequently contain identifiers that are meaningful
+to the operating system but not immediately useful to the engineer
+reading the event.
+</p>
+
+<p>
+DCOM events are one example. A raw event may expose a CLSID and
+APPID while leaving the investigator to manually determine the
+component or service involved.
+</p>
+
+<p>
+The toolkit enriches this evidence by resolving those identifiers
+into the associated Windows context when that information is
+available.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Enrichment Flow</strong>
+<p>
+CLSID → APPID → application or service context → investigation.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ENGINEERING DECISIONS -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">07 / ENGINEERING DECISIONS</p>
+<h2>Collect once. Investigate repeatedly.</h2>
+</div>
+
+<div class="decision-list">
+
+<div>
+<h3>Separate collection from analysis.</h3>
+<p>
+The endpoint collection process creates structured evidence that
+can be analyzed again without repeatedly querying the machine.
+</p>
+</div>
+
+<div>
+<h3>Preserve timestamps.</h3>
+<p>
+Time is a primary correlation mechanism, so event timing remains
+central throughout collection, analysis and reporting.
+</p>
+</div>
+
+<div>
+<h3>Enrich rather than replace raw evidence.</h3>
+<p>
+Human-readable context is added to technical identifiers while
+retaining the underlying evidence used to derive it.
+</p>
+</div>
+
+<div>
+<h3>Look for patterns across events.</h3>
+<p>
+A single warning may have little diagnostic value. Repetition,
+persistence and timing relationships can be much more meaningful.
+</p>
+</div>
+
+<div>
+<h3>Generate portable results.</h3>
+<p>
+Structured diagnostic output allows an investigation to be
+reviewed without requiring continuous access to the original
+endpoint.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- EXAMPLE -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">08 / EXAMPLE INVESTIGATION</p>
+<h2>Following an application failure through the evidence.</h2>
+</div>
+
+<div class="evidence-example">
+
+<div class="evidence-line">
+<span>OBSERVED</span>
+<p>An application failure is recorded during the reported problem window.</p>
+</div>
+
+<div class="evidence-line">
+<span>OBSERVED</span>
+<p>Related Windows events occur near the same timestamp.</p>
+</div>
+
+<div class="evidence-line">
+<span>OBSERVED</span>
+<p>System and endpoint-management evidence is available for the same period.</p>
+</div>
+
+<div class="evidence-line">
+<span>CORRELATED</span>
+<p>The toolkit groups relevant observations around the incident window.</p>
+</div>
+
+<div class="evidence-result">
+<span>RESULT</span>
+<p>
+The investigator receives a consolidated view of the failure and
+surrounding system evidence instead of reviewing each source independently.
+</p>
+</div>
+
+</div>
+
+<p class="case-note">
+This example is illustrative and does not contain production
+endpoint or user information.
+</p>
+
+</div>
+</section>
+
+
+<!-- PATTERN ANALYSIS -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">09 / PATTERN ANALYSIS</p>
+<h2>One event is different from a recurring problem.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<h3>Isolated</h3>
+<p>
+A single observation with no meaningful repetition in the
+available investigation window.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Repeated</h3>
+<p>
+The same or related behavior appears multiple times within
+the collected evidence.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Recurring</h3>
+<p>
+The behavior returns across separate periods rather than
+remaining limited to one event cluster.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Persistent</h3>
+<p>
+Evidence suggests the condition continues through a meaningful
+portion of the investigation period.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Correlated</h3>
+<p>
+Different evidence sources exhibit related behavior around
+the same incident period.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Contextual</h3>
+<p>
+Supporting evidence helps determine whether an event is likely
+relevant to the reported problem.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- DEVELOPMENT -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">10 / DEVELOPMENT</p>
+<h2>Expanding from collection into correlation.</h2>
+</div>
+
+<div class="case-timeline">
+
+<div>
+<span>FOUNDATION</span>
+<h3>Diagnostic Collection</h3>
+<p>
+Established repeatable collection of Windows system and
+event evidence.
+</p>
+</div>
+
+<div>
+<span>ANALYSIS</span>
+<h3>Pattern Recognition</h3>
+<p>
+Added structured analysis for repeated, recurring and
+persistent behavior.
+</p>
+</div>
+
+<div>
+<span>CURRENT</span>
+<h3>Evidence Correlation</h3>
+<p>
+Expanded endpoint-management evidence, technical enrichment
+and cross-source incident correlation.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- LESSONS -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">11 / LESSONS</p>
+<h2>Troubleshooting improves when evidence becomes reusable.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Diagnostic commands are useful, but their value increases when
+the results are captured in a consistent format and can be
+compared with other evidence.
+</p>
+
+<p>
+The project reinforces the idea that troubleshooting is not
+simply about collecting more logs. The larger opportunity is
+organizing evidence so relationships become visible.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Core Principle</strong>
+<p>
+Collect the evidence once. Preserve it. Correlate it. Then use
+the combined context to investigate the failure.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- STATUS -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">12 / CURRENT STATUS</p>
+<h2>Active Development</h2>
+</div>
+
+<p class="section-intro">
+The toolkit continues to evolve around broader evidence collection,
+stronger incident correlation and more useful automated diagnostic
+reporting.
+</p>
+
+<div class="case-links">
+<a href="../kubernetes-operations-console/">← Kubernetes Operations Console</a>
+<a href="../">All Projects →</a>
+</div>
+
+</div>
+</section>
+
+</main>
+
+
+<footer>
+<div class="container footer-content">
+
+<div>
+<strong>Philip Larussa</strong>
+<p>Technology Leadership • Cybersecurity • Engineering</p>
+</div>
+
+<div>
+<a href="../../">Home</a>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

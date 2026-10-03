@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kubernetes Operations Console | Philip Larussa</title>
+
+<meta name="description"
+content="Kubernetes Operations Console engineering case study covering read-only cluster visibility, Kubernetes API integration, workloads, pods, networking and containerized operations tooling.">
+
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container nav-container">
+
+<a class="brand" href="../../">PHILIP <span>LARUSSA</span></a>
+
+<nav>
+<a href="../../about/">About</a>
+<a href="../../experience/">Experience</a>
+<a href="../../projects/">Projects</a>
+<a href="../../skills/">Skills</a>
+<a href="../../training/">Training</a>
+<a href="../../military/">Military</a>
+<a href="../../resume/">Resume</a>
+</nav>
+
+</div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="case-hero">
+<div class="container">
+
+<a class="case-back" href="../">← Projects</a>
+
+<p class="eyebrow">INFRASTRUCTURE ENGINEERING • ACTIVE DEVELOPMENT</p>
+
+<h1>Kubernetes Operations Console</h1>
+
+<p class="case-lead">
+A read-only operations platform designed to consolidate Kubernetes
+cluster, workload, pod and networking information into an
+investigation-oriented interface.
+</p>
+
+<div class="case-tech">
+<span>Kubernetes</span>
+<span>Python</span>
+<span>FastAPI</span>
+<span>Docker</span>
+<span>Kubernetes API</span>
+<span>Networking</span>
+</div>
+
+</div>
+</section>
+
+
+<!-- OVERVIEW -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">01 / OVERVIEW</p>
+<h2>Making cluster state easier to investigate.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Kubernetes exposes extensive operational information, but
+investigating an application often means moving between namespaces,
+deployments, pods, services, endpoints and networking information
+using multiple commands and API queries.
+</p>
+
+<p>
+Kubernetes Operations Console was created to bring those
+relationships into a focused read-only interface designed for
+technical investigation rather than cluster administration.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Engineering Objective</strong>
+<p>
+Reduce the friction required to understand Kubernetes application
+state while maintaining a deliberately read-only operational model.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- PROBLEM -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">02 / PROBLEM</p>
+<h2>A Kubernetes application is more than a pod.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<span>01</span>
+<h3>Distributed State</h3>
+<p>
+Application state is distributed across namespaces, workloads,
+pods, services and networking resources.
+</p>
+</div>
+
+<div class="case-card">
+<span>02</span>
+<h3>Command Fragmentation</h3>
+<p>
+Troubleshooting frequently requires a sequence of kubectl commands
+and manual correlation between their results.
+</p>
+</div>
+
+<div class="case-card">
+<span>03</span>
+<h3>Operational Safety</h3>
+<p>
+A visibility platform should not require unnecessary permissions
+to modify the environment it is investigating.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ARCHITECTURE -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">03 / ARCHITECTURE</p>
+<h2>Read-only visibility from the Kubernetes API.</h2>
+</div>
+
+<div class="architecture-flow">
+
+<div>
+<span>01</span>
+<strong>Cluster</strong>
+<small>Kubernetes resources and state</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>02</span>
+<strong>Kubernetes API</strong>
+<small>Read-only resource queries</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>03</span>
+<strong>Python</strong>
+<small>Collection and normalization</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>04</span>
+<strong>FastAPI</strong>
+<small>Application and API layer</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>05</span>
+<strong>Operations Console</strong>
+<small>Investigation-oriented views</small>
+</div>
+
+</div>
+
+<p class="architecture-note">
+The console separates Kubernetes data collection from presentation,
+allowing cluster resources to be normalized into operational views
+without introducing cluster-management actions.
+</p>
+
+</div>
+</section>
+
+
+<!-- WORKFLOW -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">04 / INVESTIGATION WORKFLOW</p>
+<h2>Move from cluster to application context.</h2>
+</div>
+
+<div class="workflow-list">
+
+<div class="workflow-step">
+<span>01</span>
+<div>
+<h3>Connect to the Cluster</h3>
+<p>
+Establish Kubernetes API access using the appropriate
+authentication context.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>02</span>
+<div>
+<h3>Discover Namespaces</h3>
+<p>
+Identify the logical boundaries containing application workloads
+and supporting resources.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>03</span>
+<div>
+<h3>Inspect Workloads</h3>
+<p>
+Retrieve deployments and associated workload state to understand
+how an application is expected to run.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>04</span>
+<div>
+<h3>Trace Pods</h3>
+<p>
+Expose the pods associated with workloads and their observable
+runtime state.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>05</span>
+<div>
+<h3>Inspect Networking</h3>
+<p>
+Bring service and networking information into the same
+investigative context.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>06</span>
+<div>
+<h3>Correlate the View</h3>
+<p>
+Present related Kubernetes resources in a form designed to reduce
+manual command-by-command correlation.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- CAPABILITIES -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">05 / CAPABILITIES</p>
+<h2>Operational visibility without cluster modification.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<h3>Namespace Discovery</h3>
+<p>
+Enumerates namespaces to provide the starting point for
+cluster investigation.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Workload Visibility</h3>
+<p>
+Surfaces workload information required to understand application
+deployment state.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Pod Visibility</h3>
+<p>
+Provides pod-level information associated with application
+workloads and namespaces.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Networking Visibility</h3>
+<p>
+Extends investigation beyond compute resources to expose
+relevant Kubernetes networking information.
+</p>
+</div>
+
+<div class="case-card">
+<h3>API Integration</h3>
+<p>
+Uses Kubernetes APIs rather than relying solely on shell-command
+output as the application data source.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Read-Only Operation</h3>
+<p>
+The console is intentionally designed around visibility rather
+than resource modification.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Authentication Flexibility</h3>
+<p>
+Supports development and deployment patterns involving
+Kubernetes configuration or in-cluster authentication.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Failure Handling</h3>
+<p>
+Handles API failures and exposes useful operational errors
+without unnecessarily leaking internal exception details.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Containerized Deployment</h3>
+<p>
+The application itself can run as a containerized service,
+supporting repeatable development and testing.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ENGINEERING DECISIONS -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">06 / ENGINEERING DECISIONS</p>
+<h2>Visibility first. Modification deliberately excluded.</h2>
+</div>
+
+<div class="decision-list">
+
+<div>
+<h3>Read-only by design.</h3>
+<p>
+The application focuses on investigation and visibility rather
+than becoming another interface capable of modifying cluster state.
+</p>
+</div>
+
+<div>
+<h3>Use the Kubernetes API directly.</h3>
+<p>
+Structured API access provides a cleaner foundation for application
+logic than parsing a growing collection of CLI output.
+</p>
+</div>
+
+<div>
+<h3>Normalize before presenting.</h3>
+<p>
+Raw Kubernetes objects contain extensive information. The
+application selects and organizes data around operational questions.
+</p>
+</div>
+
+<div>
+<h3>Expect API failure.</h3>
+<p>
+Timeouts, authorization problems and unavailable resources are
+treated as expected operational conditions rather than exceptional
+design cases.
+</p>
+</div>
+
+<div>
+<h3>Keep error output safe.</h3>
+<p>
+User-facing failures should provide enough information to
+troubleshoot the problem without exposing unnecessary internal
+application details.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- EXAMPLE -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">07 / EXAMPLE INVESTIGATION</p>
+<h2>Tracing an unhealthy application.</h2>
+</div>
+
+<div class="evidence-example">
+
+<div class="evidence-line">
+<span>OBSERVED</span>
+<p>A deployment reports fewer available replicas than desired.</p>
+</div>
+
+<div class="evidence-line">
+<span>OBSERVED</span>
+<p>The associated pod is not reaching the expected runtime state.</p>
+</div>
+
+<div class="evidence-line">
+<span>OBSERVED</span>
+<p>The workload and pod belong to the same application namespace.</p>
+</div>
+
+<div class="evidence-line">
+<span>OBSERVED</span>
+<p>Related networking resources can be inspected in the same operational context.</p>
+</div>
+
+<div class="evidence-result">
+<span>INVESTIGATION</span>
+<p>
+The console brings the related workload, pod and networking
+evidence together so the engineer can continue troubleshooting
+without reconstructing the relationship manually.
+</p>
+</div>
+
+</div>
+
+<p class="case-note">
+This is an illustrative investigation and does not contain
+production environment data.
+</p>
+
+</div>
+</section>
+
+
+<!-- CHALLENGES -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">08 / ENGINEERING CHALLENGES</p>
+<h2>Kubernetes visibility has its own complexity.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<h3>Resource Relationships</h3>
+<p>
+Namespaces, workloads, pods and networking objects must be
+correlated without incorrectly assuming relationships.
+</p>
+</div>
+
+<div class="case-card">
+<h3>API Scale</h3>
+<p>
+Resource queries need pagination, timeout handling and bounded
+behavior as cluster size grows.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Authentication Context</h3>
+<p>
+Local development and in-cluster deployment use different
+authentication mechanisms and trust boundaries.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Error Sanitization</h3>
+<p>
+Useful diagnostic information must be preserved while avoiding
+unnecessary exposure of internal exceptions or credentials.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Container Security</h3>
+<p>
+The application container should run with only the privileges
+required to perform its visibility function.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Networking Context</h3>
+<p>
+Application health often depends on relationships outside the
+pod itself, making networking visibility an important expansion.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- DEVELOPMENT -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">09 / DEVELOPMENT</p>
+<h2>Building visibility in layers.</h2>
+</div>
+
+<div class="case-timeline">
+
+<div>
+<span>FOUNDATION</span>
+<h3>Cluster Visibility</h3>
+<p>
+Established Kubernetes API connectivity and the initial
+operations-console application structure.
+</p>
+</div>
+
+<div>
+<span>WORKLOAD VISIBILITY</span>
+<h3>Namespaces, Workloads & Pods</h3>
+<p>
+Expanded the application around the resources needed to
+understand deployed application state.
+</p>
+</div>
+
+<div>
+<span>CURRENT</span>
+<h3>Networking Visibility</h3>
+<p>
+Extended the known-good platform into Kubernetes networking
+information while retaining the read-only operational model.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- TESTING -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">10 / ENGINEERING QUALITY</p>
+<h2>Testing the operational layer.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+The project includes automated testing around application behavior
+and Kubernetes integration paths. This helps preserve known-good
+behavior as visibility features are added.
+</p>
+
+<p>
+The development process also uses explicit checkpoints so larger
+changes can be evaluated against a stable baseline rather than
+continually changing an unverified application.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Known-Good Principle</strong>
+<p>
+Establish a working baseline, add one capability, validate it,
+and preserve the checkpoint before moving forward.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- LESSONS -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">11 / LESSONS</p>
+<h2>Operational tools should reduce cognitive load.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Kubernetes already contains the information required for many
+investigations. The challenge is frequently finding the relevant
+resources and understanding how they relate.
+</p>
+
+<p>
+An operations interface becomes valuable when it reduces that
+correlation effort without obscuring the underlying platform.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Core Principle</strong>
+<p>
+Make Kubernetes easier to investigate without pretending that
+Kubernetes itself is simple.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- STATUS -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">12 / CURRENT STATUS</p>
+<h2>Active Development</h2>
+</div>
+
+<p class="section-intro">
+The current known-good development stage focuses on networking
+visibility while preserving the established cluster, workload
+and pod investigation capabilities.
+</p>
+
+<div class="case-links">
+<a href="../pcap-analyzer/">← PCAP Analyzer</a>
+<a href="../">All Projects →</a>
+</div>
+
+</div>
+</section>
+
+</main>
+
+
+<footer>
+<div class="container footer-content">
+
+<div>
+<strong>Philip Larussa</strong>
+<p>Technology Leadership • Cybersecurity • Engineering</p>
+</div>
+
+<div>
+<a href="../../">Home</a>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

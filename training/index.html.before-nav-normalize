@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Training | Philip Larussa</title>
+
+    <meta name="description"
+          content="Professional cybersecurity, infrastructure and military technical training completed by Philip Larussa.">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+
+        <a class="brand" href="../">
+            PHILIP <span>LARUSSA</span>
+        </a>
+
+        <nav>
+            <a href="../about/">About</a>
+            <a href="../experience/">Experience</a>
+            <a href="../projects/">Projects</a>
+            <a href="../training/">Training</a>
+            <a href="../military/">Military</a>
+            <a href="../resume/">Resume</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="page-hero">
+
+    <div class="container narrow">
+
+        <p class="eyebrow">CONTINUOUS TECHNICAL DEVELOPMENT</p>
+
+        <h1>Training</h1>
+
+        <p class="hero-description">
+            Advanced professional security training built on an earlier
+            foundation in electronics, signal processing, systems
+            troubleshooting and technical operations.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <p class="section-label">PROFESSIONAL SECURITY TRAINING</p>
+
+        <h2>Black Hat technical training.</h2>
+
+        <p class="section-intro">
+            Hands-on technical coursework focused on offensive security,
+            defensive analysis, infrastructure security, identity systems,
+            malware traffic analysis, Kubernetes, Linux and containers.
+        </p>
+
+
+        <div class="training-grid">
+
+
+            <article class="training-card">
+
+                <div class="training-year">2025</div>
+
+                <div class="training-provider">
+                    BLACK HAT
+                </div>
+
+                <h3>
+                    0-Day Unnecessary: Attacking and Protecting
+                    Kubernetes, Linux and Containers
+                </h3>
+
+                <p>
+                    Advanced technical training focused on the attack
+                    surface and defensive security of Kubernetes,
+                    Linux systems and containerized environments.
+                </p>
+
+                <div class="career-tags">
+                    <span>Kubernetes</span>
+                    <span>Linux</span>
+                    <span>Containers</span>
+                    <span>Security</span>
+                </div>
+
+            </article>
+
+
+            <article class="training-card">
+
+                <div class="training-year">2024</div>
+
+                <div class="training-provider">
+                    BLACK HAT
+                </div>
+
+                <h3>
+                    Advanced Malware Traffic Analysis:
+                    Adaptive Defence
+                </h3>
+
+                <p>
+                    Advanced network-security training focused on
+                    analyzing malicious traffic, recognizing attacker
+                    behavior and using network evidence during
+                    security investigations.
+                </p>
+
+                <div class="career-tags">
+                    <span>Traffic Analysis</span>
+                    <span>Malware</span>
+                    <span>Network Security</span>
+                    <span>Incident Investigation</span>
+                </div>
+
+            </article>
+
+
+            <article class="training-card">
+
+                <div class="training-year">2022</div>
+
+                <div class="training-provider">
+                    BLACK HAT
+                </div>
+
+                <h3>Abusing Active Directory</h3>
+
+                <p>
+                    Technical security training covering Active Directory
+                    attack paths, identity weaknesses, authentication
+                    security and defensive considerations in enterprise
+                    Microsoft environments.
+                </p>
+
+                <div class="career-tags">
+                    <span>Active Directory</span>
+                    <span>Identity Security</span>
+                    <span>Authentication</span>
+                    <span>Incident Response</span>
+                </div>
+
+            </article>
+
+
+            <article class="training-card">
+
+                <div class="training-year">2019</div>
+
+                <div class="training-provider">
+                    BLACK HAT
+                </div>
+
+                <h3>Advanced Infrastructure Hacking</h3>
+
+                <p>
+                    Advanced security training focused on infrastructure
+                    attack techniques, network security, system weaknesses
+                    and practical approaches to assessing enterprise
+                    technology environments.
+                </p>
+
+                <div class="career-tags">
+                    <span>Infrastructure Security</span>
+                    <span>Network Security</span>
+                    <span>Security Assessment</span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section alt">
+
+    <div class="container">
+
+        <p class="section-label">MILITARY TECHNICAL TRAINING</p>
+
+        <h2>Electronics, sonar & systems engineering foundation.</h2>
+
+        <p class="section-intro">
+            Formal Navy technical training established the electronics,
+            signal-analysis and troubleshooting foundation that preceded
+            my career in enterprise information technology.
+        </p>
+
+
+        <div class="training-timeline">
+
+
+            <article class="training-timeline-item">
+
+                <div class="training-timeline-date">
+                    2009
+                </div>
+
+                <div class="training-timeline-content">
+
+                    <p class="training-provider">
+                        TRAINING CENTER NORTH ISLAND
+                    </p>
+
+                    <h3>
+                        Naval Occupational Safety /
+                        First-Line Supervisor Training
+                    </h3>
+
+                    <p>
+                        Quality-control and occupational-safety training
+                        designed for first-line supervisors with
+                        responsibility for personnel, maintenance
+                        activities and safe technical operations.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="training-timeline-item">
+
+                <div class="training-timeline-date">
+                    2006–2007
+                </div>
+
+                <div class="training-timeline-content">
+
+                    <p class="training-provider">
+                        FLEET ANTISUBMARINE WARFARE TRAINING CENTER
+                    </p>
+
+                    <h3>
+                        Integrated Towed Array & Sonobuoy
+                        Sensor Maintenance
+                    </h3>
+
+                    <p>
+                        Practical troubleshooting, repair and maintenance
+                        training covering data-processing equipment,
+                        electronic systems and complex electromechanical
+                        systems supporting integrated sonar operations.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="training-timeline-item">
+
+                <div class="training-timeline-date">
+                    2006
+                </div>
+
+                <div class="training-timeline-content">
+
+                    <p class="training-provider">
+                        FLEET ANTISUBMARINE WARFARE TRAINING CENTER
+                    </p>
+
+                    <h3>
+                        Surface Sonar Technician — Class A
+                    </h3>
+
+                    <p>
+                        Technical and operational training covering
+                        ocean acoustics, sonar fundamentals,
+                        antisubmarine-warfare fire control,
+                        range prediction, passive and active sonar
+                        operations and basic acoustic analysis.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="training-timeline-item">
+
+                <div class="training-timeline-date">
+                    2005–2006
+                </div>
+
+                <div class="training-timeline-content">
+
+                    <p class="training-provider">
+                        NAVAL STATION GREAT LAKES
+                    </p>
+
+                    <h3>
+                        Sonar Technician Surface Apprentice
+                        Technical Training
+                    </h3>
+
+                    <p>
+                        Electronics training covering DC and AC theory,
+                        electronic measurement and test equipment,
+                        transistor circuits, amplifiers, oscillators,
+                        operational amplifiers and digital circuits.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <p class="section-label">TECHNICAL DEVELOPMENT</p>
+
+        <h2>Training applied to engineering.</h2>
+
+        <div class="training-progression">
+
+            <div>
+                <span>FOUNDATION</span>
+                <strong>Electronics</strong>
+                <p>Circuits, test equipment and diagnostics</p>
+            </div>
+
+            <div>
+                <span>SYSTEMS</span>
+                <strong>Signal Processing</strong>
+                <p>Sonar, acoustics and complex system behavior</p>
+            </div>
+
+            <div>
+                <span>INFRASTRUCTURE</span>
+                <strong>Enterprise Systems</strong>
+                <p>Networks, servers, identity and cloud platforms</p>
+            </div>
+
+            <div>
+                <span>SECURITY</span>
+                <strong>Adversarial Thinking</strong>
+                <p>Attack paths, evidence and defensive architecture</p>
+            </div>
+
+            <div>
+                <span>ENGINEERING</span>
+                <strong>Automation & AI</strong>
+                <p>Building tools to investigate complex systems</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section alt">
+
+    <div class="container narrow">
+
+        <p class="section-label">LEARNING PHILOSOPHY</p>
+
+        <h2>Training is most valuable when it becomes capability.</h2>
+
+        <p class="lead">
+            Formal training provides the foundation. I reinforce it by
+            building labs, reproducing problems, analyzing real system
+            behavior and creating tools that apply what I have learned.
+        </p>
+
+        <p>
+            That approach has carried forward from electronics
+            troubleshooting into networking, cybersecurity, cloud
+            infrastructure, Kubernetes, automation and AI engineering.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+            <strong>Philip Larussa</strong>
+
+            <p>
+                Technology Leadership • Cybersecurity • Engineering
+            </p>
+        </div>
+
+        <div>
+            <a href="../">Home</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

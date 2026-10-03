@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Investigation & Correlation Platform | Philip Larussa</title>
+
+<meta name="description"
+content="Security investigation engineering case study covering multi-source evidence correlation, timelines, session analysis, client-IP intelligence and behavioral detection.">
+
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container nav-container">
+
+<a class="brand" href="../../">PHILIP <span>LARUSSA</span></a>
+
+<nav>
+<a href="../../about/">About</a>
+<a href="../../experience/">Experience</a>
+<a href="../../projects/">Projects</a>
+<a href="../../skills/">Skills</a>
+<a href="../../training/">Training</a>
+<a href="../../military/">Military</a>
+<a href="../../resume/">Resume</a>
+</nav>
+
+</div>
+</header>
+
+<main>
+
+<section class="case-hero">
+<div class="container">
+
+<a class="case-back" href="../">← Projects</a>
+
+<p class="eyebrow">SECURITY ENGINEERING • ACTIVE DEVELOPMENT</p>
+
+<h1>Investigation & Correlation Platform</h1>
+
+<p class="case-lead">
+A security investigation platform designed to correlate application,
+web, session and network evidence into a unified timeline for
+behavioral analysis and technical investigation.
+</p>
+
+<div class="case-tech">
+<span>Python</span>
+<span>FastAPI</span>
+<span>SQL</span>
+<span>SQLite</span>
+<span>IIS</span>
+<span>IP Intelligence</span>
+<span>Correlation</span>
+</div>
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">01 / OVERVIEW</p>
+<h2>One investigation. Multiple evidence sources.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Application investigations often require evidence from systems
+that were never designed to be analyzed together. Application
+transactions may exist in one database while HTTP requests,
+client addresses, sessions and security telemetry exist elsewhere.
+</p>
+
+<p>
+The Investigation & Correlation Platform was created to bring
+those sources together around a common investigation context:
+who, when, where and what activity occurred.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Engineering Objective</strong>
+<p>
+Reduce manual evidence correlation while preserving the source
+records and timing relationships supporting an investigation.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">02 / PROBLEM</p>
+<h2>Logs show events. Investigations need relationships.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<span>01</span>
+<h3>Separate Systems</h3>
+<p>
+Application, web and network evidence may be stored in independent
+systems with different schemas and identifiers.
+</p>
+</div>
+
+<div class="case-card">
+<span>02</span>
+<h3>Different Clocks</h3>
+<p>
+Sources can record timestamps in different time zones or formats,
+making naive event comparison unreliable.
+</p>
+</div>
+
+<div class="case-card">
+<span>03</span>
+<h3>Shared Infrastructure</h3>
+<p>
+Reverse proxies and application infrastructure can obscure the
+original client unless forwarded-address information is handled correctly.
+</p>
+</div>
+
+<div class="case-card">
+<span>04</span>
+<h3>High Event Volume</h3>
+<p>
+Large datasets make manual searches difficult when an investigator
+needs to reconstruct a narrow sequence of activity.
+</p>
+</div>
+
+<div class="case-card">
+<span>05</span>
+<h3>Behavior Across Events</h3>
+<p>
+Individual records may appear normal while the sequence and timing
+between records reveal unusual behavior.
+</p>
+</div>
+
+<div class="case-card">
+<span>06</span>
+<h3>Repeatable Analysis</h3>
+<p>
+Investigative conclusions should be reproducible from the
+underlying evidence rather than dependent on manual reconstruction.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">03 / ARCHITECTURE</p>
+<h2>Normalize first. Correlate second.</h2>
+</div>
+
+<div class="architecture-flow">
+
+<div>
+<span>01</span>
+<strong>Data Sources</strong>
+<small>Application, web and security evidence</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>02</span>
+<strong>Normalize</strong>
+<small>Time, identity and client context</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>03</span>
+<strong>Correlate</strong>
+<small>Events, sessions and requests</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>04</span>
+<strong>Enrich</strong>
+<small>Network and IP intelligence</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>05</span>
+<strong>Investigate</strong>
+<small>Timeline and behavioral analysis</small>
+</div>
+
+</div>
+
+<p class="architecture-note">
+Correlation is performed only after important source differences,
+including timestamps and client-address representation, are normalized.
+</p>
+
+</div>
+</section>
+
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">04 / INVESTIGATION WORKFLOW</p>
+<h2>Start with a question and follow the evidence.</h2>
+</div>
+
+<div class="workflow-list">
+
+<div class="workflow-step">
+<span>01</span>
+<div>
+<h3>Define Investigation Scope</h3>
+<p>
+Begin with an identity, network address, date range or other
+supported investigative pivot.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>02</span>
+<div>
+<h3>Retrieve Source Evidence</h3>
+<p>
+Query relevant application and web records associated with
+the investigation window.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>03</span>
+<div>
+<h3>Normalize Time</h3>
+<p>
+Convert timestamps into a common investigative timeline before
+attempting cross-source matching.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>04</span>
+<div>
+<h3>Resolve Client Context</h3>
+<p>
+Evaluate direct and forwarded client-address information to
+preserve the best available source context.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>05</span>
+<div>
+<h3>Correlate Events</h3>
+<p>
+Associate records using timing, session, identity and other
+available evidence.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>06</span>
+<div>
+<h3>Analyze Behavior</h3>
+<p>
+Evaluate event sequences, cross-address behavior and timing
+relationships that may warrant deeper review.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">05 / CAPABILITIES</p>
+<h2>Investigation built around pivots and correlation.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<h3>Identity Search</h3>
+<p>
+Investigates activity associated with a selected identity over
+a defined period.
+</p>
+</div>
+
+<div class="case-card">
+<h3>IP Search</h3>
+<p>
+Uses network-address evidence as an investigative pivot across
+available data sources.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Date-Range Analysis</h3>
+<p>
+Bounds investigations to relevant windows rather than processing
+unnecessary historical evidence.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Timeline Correlation</h3>
+<p>
+Combines related application and web events into chronological
+investigation views.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Session Analysis</h3>
+<p>
+Uses available session identifiers to strengthen relationships
+between otherwise separate records.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Cross-IP Analysis</h3>
+<p>
+Surfaces situations where related activity appears across
+multiple client-address observations.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Forwarded Client IP</h3>
+<p>
+Handles proxy-forwarded address information while retaining
+the infrastructure-observed address for evidence.
+</p>
+</div>
+
+<div class="case-card">
+<h3>IP Intelligence</h3>
+<p>
+Adds external network context to public client addresses where
+that enrichment is useful to an investigation.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Behavioral Sequences</h3>
+<p>
+Detects defined event sequences and evaluates the timing between
+steps to highlight unusually rapid activity.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">06 / CORRELATION ENGINE</p>
+<h2>Time is evidence.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Records from separate systems rarely contain a perfect universal
+identifier. Temporal proximity therefore becomes one of several
+signals used to establish possible relationships between events.
+</p>
+
+<p>
+The platform combines timing with available identity, session,
+request and client-address information rather than treating
+timestamp proximity alone as proof of correlation.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Correlation Principle</strong>
+<p>
+A close timestamp is evidence of proximity. Additional context
+determines whether the records represent the same activity.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">07 / CLIENT IP HANDLING</p>
+<h2>Preserve both network perspectives.</h2>
+</div>
+
+<div class="decision-list">
+
+<div>
+<h3>Infrastructure-observed address.</h3>
+<p>
+The address observed by the web server remains available as part
+of the original request evidence.
+</p>
+</div>
+
+<div>
+<h3>Forwarded client address.</h3>
+<p>
+When valid forwarded-address information is available, the
+original client can be represented separately from the proxy
+or intermediary.
+</p>
+</div>
+
+<div>
+<h3>Do not destroy provenance.</h3>
+<p>
+Normalization should create a useful investigative client field
+without discarding the values from which it was derived.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">08 / BEHAVIORAL ANALYSIS</p>
+<h2>The timing between actions can matter.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Some investigations require more than determining whether
+individual events occurred. The sequence and elapsed time between
+related actions can provide additional context.
+</p>
+
+<p>
+The platform can identify predefined consecutive event patterns,
+calculate transition timing and surface sequences that occur
+within investigation-defined thresholds.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Important Distinction</strong>
+<p>
+A rapid sequence is an investigative indicator—not proof by
+itself of malicious or unauthorized behavior.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">09 / EXAMPLE INVESTIGATION</p>
+<h2>From separate records to one timeline.</h2>
+</div>
+
+<div class="evidence-example">
+
+<div class="evidence-line">
+<span>SOURCE A</span>
+<p>An application records a transaction for an investigated identity.</p>
+</div>
+
+<div class="evidence-line">
+<span>SOURCE B</span>
+<p>A web request occurs within the relevant correlation window.</p>
+</div>
+
+<div class="evidence-line">
+<span>NETWORK</span>
+<p>Client-address evidence is preserved from the request path.</p>
+</div>
+
+<div class="evidence-line">
+<span>SESSION</span>
+<p>Available session context provides an additional correlation signal.</p>
+</div>
+
+<div class="evidence-result">
+<span>TIMELINE</span>
+<p>
+The related observations are presented together while preserving
+the evidence used to establish the relationship.
+</p>
+</div>
+
+</div>
+
+<p class="case-note">
+This is synthetic example data. No production users, addresses,
+transactions or investigation records are presented.
+</p>
+
+</div>
+</section>
+
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">10 / ENGINEERING DECISIONS</p>
+<h2>Correlation should remain explainable.</h2>
+</div>
+
+<div class="decision-list">
+
+<div>
+<h3>Normalize explicitly.</h3>
+<p>
+Timezone and client-address transformations are performed
+deliberately rather than hidden inside presentation logic.
+</p>
+</div>
+
+<div>
+<h3>Preserve source evidence.</h3>
+<p>
+Derived investigative fields supplement rather than replace
+the original values.
+</p>
+</div>
+
+<div>
+<h3>Use multiple correlation signals.</h3>
+<p>
+Timing is combined with identity, session and request context
+when that evidence is available.
+</p>
+</div>
+
+<div>
+<h3>Cache enrichment responsibly.</h3>
+<p>
+External network enrichment can be persisted temporarily to
+reduce unnecessary repeated lookups.
+</p>
+</div>
+
+<div>
+<h3>Separate indicators from conclusions.</h3>
+<p>
+Behavioral detections identify activity worth reviewing without
+automatically assigning intent.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">11 / DEVELOPMENT</p>
+<h2>From search to behavioral investigation.</h2>
+</div>
+
+<div class="case-timeline">
+
+<div>
+<span>FOUNDATION</span>
+<h3>Multi-Source Search</h3>
+<p>
+Established identity, address and date-based retrieval across
+application and web evidence.
+</p>
+</div>
+
+<div>
+<span>CORRELATION</span>
+<h3>Timeline & Session Analysis</h3>
+<p>
+Added cross-source timing, session and client-address correlation.
+</p>
+</div>
+
+<div>
+<span>CURRENT</span>
+<h3>Behavior & Enrichment</h3>
+<p>
+Expanded investigation with network intelligence, cross-address
+analysis and timed event-sequence detection.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">12 / PRIVACY & DESIGN</p>
+<h2>Investigation tooling requires restraint.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Security investigation platforms can process sensitive operational
+information. The public portfolio therefore documents architecture,
+engineering methods and synthetic examples rather than exposing
+production evidence.
+</p>
+
+<p>
+The same principle applies to application design: collect and
+display information because it supports a defined investigation,
+not simply because the data is available.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Design Principle</strong>
+<p>
+Preserve enough evidence to support the investigation while
+minimizing unnecessary exposure of sensitive information.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">13 / CURRENT STATUS</p>
+<h2>Active Development</h2>
+</div>
+
+<p class="section-intro">
+Current development continues to improve correlation,
+investigation performance, behavioral analysis and the ability
+to navigate relationships across larger evidence sets.
+</p>
+
+<div class="case-links">
+<a href="../windows-diagnostic-toolkit/">← Windows Diagnostic Toolkit</a>
+<a href="../">All Projects →</a>
+</div>
+
+</div>
+</section>
+
+</main>
+
+
+<footer>
+<div class="container footer-content">
+
+<div>
+<strong>Philip Larussa</strong>
+<p>Technology Leadership • Cybersecurity • Engineering</p>
+</div>
+
+<div>
+<a href="../../">Home</a>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

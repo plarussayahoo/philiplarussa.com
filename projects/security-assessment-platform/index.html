@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Security Assessment Platform | Philip Larussa</title>
+
+<meta name="description"
+content="Security Assessment Platform engineering case study covering authorized reconnaissance, DNS discovery, service analysis, HTTP and TLS inspection, DAST, application-security testing and evidence management.">
+
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="container nav-container">
+
+<a class="brand" href="../../">PHILIP <span>LARUSSA</span></a>
+
+<nav>
+<a href="../../about/">About</a>
+<a href="../../experience/">Experience</a>
+<a href="../../projects/">Projects</a>
+<a href="../../skills/">Skills</a>
+<a href="../../training/">Training</a>
+<a href="../../military/">Military</a>
+<a href="../../resume/">Resume</a>
+</nav>
+
+</div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="case-hero">
+<div class="container">
+
+<a class="case-back" href="../">← Projects</a>
+
+<p class="eyebrow">CYBERSECURITY ENGINEERING • ACTIVE DEVELOPMENT</p>
+
+<h1>Security Assessment Platform</h1>
+
+<p class="case-lead">
+An authorized security-assessment environment designed to organize
+reconnaissance, infrastructure testing, web-application analysis
+and supporting evidence into a repeatable technical workflow.
+</p>
+
+<div class="case-tech">
+<span>Python</span>
+<span>FastAPI</span>
+<span>OWASP</span>
+<span>OWASP ZAP</span>
+<span>Nmap</span>
+<span>DNS</span>
+<span>HTTP</span>
+<span>TLS</span>
+<span>DAST</span>
+</div>
+
+</div>
+</section>
+
+
+<!-- OVERVIEW -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">01 / OVERVIEW</p>
+<h2>From individual security tools to an assessment workflow.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Security assessments frequently involve multiple specialized tools.
+One may discover hosts, another enumerates DNS, another inspects
+services, and another evaluates web-application behavior.
+</p>
+
+<p>
+The challenge is not simply running those tools. The larger
+engineering problem is maintaining scope, organizing results,
+preserving evidence and moving logically from discovery to
+validation.
+</p>
+
+<p>
+The Security Assessment Platform is designed around that workflow.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Engineering Objective</strong>
+<p>
+Create a controlled environment where authorized security testing
+can progress from reconnaissance to validation while retaining the
+evidence generated at each stage.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- AUTHORIZATION -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">02 / OPERATING MODEL</p>
+<h2>Scope and authorization come first.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<span>01</span>
+<h3>Authorized Targets</h3>
+<p>
+Assessment activity is intended for systems where testing has
+been explicitly authorized.
+</p>
+</div>
+
+<div class="case-card">
+<span>02</span>
+<h3>Defined Scope</h3>
+<p>
+Targets, domains, addresses and test types should be established
+before active testing begins.
+</p>
+</div>
+
+<div class="case-card">
+<span>03</span>
+<h3>Evidence Retention</h3>
+<p>
+Tool output is treated as investigation evidence rather than
+temporary terminal output.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- PROBLEM -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">03 / PROBLEM</p>
+<h2>Security tools generate results. Assessments need context.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<h3>Tool Fragmentation</h3>
+<p>
+Reconnaissance, network discovery, TLS analysis and DAST can
+produce separate result sets with little built-in relationship.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Evidence Sprawl</h3>
+<p>
+Results can quickly become distributed across terminal output,
+text files, scanner reports and analyst notes.
+</p>
+</div>
+
+<div class="case-card">
+<h3>False Positives</h3>
+<p>
+Automated findings require technical review before they become
+defensible security conclusions.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Scope Control</h3>
+<p>
+Assessment tooling needs clear boundaries so testing remains
+within authorized targets.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Repeatability</h3>
+<p>
+A useful assessment process should be repeatable rather than
+dependent on remembering an informal sequence of commands.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Correlation</h3>
+<p>
+A host, DNS record, service and web finding may represent
+different observations of the same underlying asset.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ARCHITECTURE -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">04 / ARCHITECTURE</p>
+<h2>A pipeline from discovery to evidence.</h2>
+</div>
+
+<div class="architecture-flow">
+
+<div>
+<span>01</span>
+<strong>Scope</strong>
+<small>Authorized targets and boundaries</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>02</span>
+<strong>Discover</strong>
+<small>DNS, hosts and exposed services</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>03</span>
+<strong>Inspect</strong>
+<small>HTTP, TLS and service behavior</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>04</span>
+<strong>Assess</strong>
+<small>Application and security testing</small>
+</div>
+
+<b>→</b>
+
+<div>
+<span>05</span>
+<strong>Preserve</strong>
+<small>Evidence and validated findings</small>
+</div>
+
+</div>
+
+<p class="architecture-note">
+The platform treats each phase as an input to the next. Discovery
+results become assessment targets, while the generated evidence
+remains available for later validation and correlation.
+</p>
+
+</div>
+</section>
+
+
+<!-- WORKFLOW -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">05 / ASSESSMENT WORKFLOW</p>
+<h2>Progressively increase understanding.</h2>
+</div>
+
+<div class="workflow-list">
+
+<div class="workflow-step">
+<span>01</span>
+<div>
+<h3>Establish Scope</h3>
+<p>
+Define the systems, domains and testing boundaries included in
+the authorized assessment.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>02</span>
+<div>
+<h3>Enumerate</h3>
+<p>
+Discover DNS records, subdomains, hosts and other externally
+observable attack-surface information.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>03</span>
+<div>
+<h3>Discover Services</h3>
+<p>
+Identify reachable ports and services associated with authorized
+targets.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>04</span>
+<div>
+<h3>Inspect HTTP & TLS</h3>
+<p>
+Capture web behavior, response metadata, protocol characteristics
+and certificate information.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>05</span>
+<div>
+<h3>Perform Application Testing</h3>
+<p>
+Use appropriate DAST and application-security techniques against
+the authorized web surface.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>06</span>
+<div>
+<h3>Validate Findings</h3>
+<p>
+Review scanner results against direct technical evidence before
+treating them as confirmed findings.
+</p>
+</div>
+</div>
+
+<div class="workflow-step">
+<span>07</span>
+<div>
+<h3>Preserve Results</h3>
+<p>
+Store assessment evidence so findings can be queried, compared
+and revisited later.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- CAPABILITIES -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">06 / CAPABILITIES</p>
+<h2>Multiple security disciplines in one workflow.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<h3>DNS Discovery</h3>
+<p>
+Collects DNS information useful for understanding an authorized
+target's externally visible structure.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Subdomain Enumeration</h3>
+<p>
+Combines discovery techniques to identify and correlate
+subdomains associated with an assessment scope.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Service Discovery</h3>
+<p>
+Identifies reachable network services for further technical review.
+</p>
+</div>
+
+<div class="case-card">
+<h3>HTTP Analysis</h3>
+<p>
+Examines web responses, headers, methods and observable
+application behavior.
+</p>
+</div>
+
+<div class="case-card">
+<h3>TLS Analysis</h3>
+<p>
+Captures certificate and negotiated TLS information as part of
+the web-security evidence set.
+</p>
+</div>
+
+<div class="case-card">
+<h3>DAST</h3>
+<p>
+Integrates dynamic application-security testing into the broader
+assessment workflow.
+</p>
+</div>
+
+<div class="case-card">
+<h3>OWASP Testing</h3>
+<p>
+Uses established web-application security concepts to guide
+technical validation and investigation.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Finding Validation</h3>
+<p>
+Separates automated scanner output from findings that have been
+reviewed against technical evidence.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Evidence Storage</h3>
+<p>
+Preserves scan and investigation results so they remain available
+for later comparison and correlation.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- RECON -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">07 / RECONNAISSANCE</p>
+<h2>Discovery becomes structured input.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Reconnaissance is useful when its results feed the next stage
+of analysis. The platform therefore treats discovered names,
+addresses and services as structured assessment information
+rather than disconnected command output.
+</p>
+
+<p>
+A dedicated reconnaissance component combines multiple discovery
+methods and correlates their results into a common view.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Recon Principle</strong>
+<p>
+Discover once, retain the result and allow later assessment stages
+to reuse the evidence.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- DAST -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">08 / APPLICATION SECURITY</p>
+<h2>DAST is a source of evidence—not the final verdict.</h2>
+</div>
+
+<div class="decision-list">
+
+<div>
+<h3>Automated discovery.</h3>
+<p>
+Dynamic scanners can efficiently identify behaviors and conditions
+that warrant deeper investigation.
+</p>
+</div>
+
+<div>
+<h3>Technical validation.</h3>
+<p>
+A scanner result is reviewed against the application response
+and supporting evidence before being treated as a validated issue.
+</p>
+</div>
+
+<div>
+<h3>False-positive review.</h3>
+<p>
+Findings that are not supported by observable behavior should
+not be promoted simply because a tool assigned a severity.
+</p>
+</div>
+
+<div>
+<h3>Remediation context.</h3>
+<p>
+Validated findings become more useful when the affected behavior
+and evidence are preserved for remediation and retesting.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- EVIDENCE -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">09 / EVIDENCE MODEL</p>
+<h2>Keep the output that supports the finding.</h2>
+</div>
+
+<div class="evidence-example">
+
+<div class="evidence-line">
+<span>DISCOVERY</span>
+<p>An authorized host and web service are identified.</p>
+</div>
+
+<div class="evidence-line">
+<span>HTTP</span>
+<p>The application returns observable response behavior relevant to testing.</p>
+</div>
+
+<div class="evidence-line">
+<span>SCANNER</span>
+<p>An automated test identifies a condition requiring review.</p>
+</div>
+
+<div class="evidence-line">
+<span>VALIDATION</span>
+<p>The analyst compares the result with the underlying request and response evidence.</p>
+</div>
+
+<div class="evidence-result">
+<span>FINDING</span>
+<p>
+Only evidence-supported results progress into the validated
+assessment record.
+</p>
+</div>
+
+</div>
+
+<p class="case-note">
+The example is intentionally generic and contains no real target,
+vulnerability or production assessment information.
+</p>
+
+</div>
+</section>
+
+
+<!-- ENGINEERING -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">10 / ENGINEERING DECISIONS</p>
+<h2>Build around the assessment, not around one scanner.</h2>
+</div>
+
+<div class="decision-list">
+
+<div>
+<h3>Tool-independent evidence.</h3>
+<p>
+The assessment model should remain useful even as individual
+security tools change.
+</p>
+</div>
+
+<div>
+<h3>Preserve raw results.</h3>
+<p>
+Original outputs remain available so normalized findings can be
+traced back to their source evidence.
+</p>
+</div>
+
+<div>
+<h3>Separate discovery from validation.</h3>
+<p>
+Automated identification of a condition is not treated as
+equivalent to technical confirmation.
+</p>
+</div>
+
+<div>
+<h3>Maintain explicit authorization.</h3>
+<p>
+Security testing capabilities are designed around defined
+assessment scope rather than unrestricted targeting.
+</p>
+</div>
+
+<div>
+<h3>Make workflows composable.</h3>
+<p>
+Reconnaissance, service analysis and application testing can
+evolve independently while contributing to a shared investigation.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- CHALLENGES -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">11 / ENGINEERING CHALLENGES</p>
+<h2>The difficult part is connecting the evidence.</h2>
+</div>
+
+<div class="case-grid-3">
+
+<div class="case-card">
+<h3>Different Output Formats</h3>
+<p>
+Security tools represent targets and findings differently,
+requiring normalization before useful correlation.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Long-Running Tasks</h3>
+<p>
+Enumeration and scanning operations may require asynchronous
+execution, progress reporting and persistent job state.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Rate Control</h3>
+<p>
+Testing workflows need bounded behavior appropriate to the
+authorized environment.
+</p>
+</div>
+
+<div class="case-card">
+<h3>False Positives</h3>
+<p>
+Automated severity labels cannot substitute for evidence-based
+technical review.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Evidence Volume</h3>
+<p>
+Repeated scans create substantial output that needs organization
+if historical comparison is expected.
+</p>
+</div>
+
+<div class="case-card">
+<h3>Scope Enforcement</h3>
+<p>
+The platform must keep the relationship between assessment
+targets and authorization visible throughout the workflow.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- DEVELOPMENT -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">12 / DEVELOPMENT</p>
+<h2>From reconnaissance toward an integrated assessment platform.</h2>
+</div>
+
+<div class="case-timeline">
+
+<div>
+<span>FOUNDATION</span>
+<h3>Reconnaissance</h3>
+<p>
+Established domain, DNS and subdomain discovery with correlated
+result views.
+</p>
+</div>
+
+<div>
+<span>ASSESSMENT</span>
+<h3>HTTP, TLS & Service Analysis</h3>
+<p>
+Expanded the workflow into infrastructure and web-service
+evidence collection.
+</p>
+</div>
+
+<div>
+<span>CURRENT</span>
+<h3>Integrated Security Testing</h3>
+<p>
+Combining DAST, application testing, evidence retention and
+validation into a broader assessment workflow.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- LESSONS -->
+
+<section class="section">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">13 / LESSONS</p>
+<h2>Finding something is not the same as proving it.</h2>
+</div>
+
+<div class="case-two-column">
+
+<div>
+<p>
+Security tooling is extremely effective at producing observations.
+The engineering challenge is converting those observations into
+evidence-supported findings without losing provenance.
+</p>
+
+<p>
+The platform reinforces a broader approach used throughout my
+technical work: automate collection and correlation while keeping
+the evidence visible to the engineer making the decision.
+</p>
+</div>
+
+<div class="case-callout">
+<strong>Core Principle</strong>
+<p>
+Automate discovery. Preserve evidence. Validate technically.
+Then make the finding.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- STATUS -->
+
+<section class="section alt">
+<div class="container case-container">
+
+<div class="case-section-heading">
+<p class="section-label">14 / CURRENT STATUS</p>
+<h2>Active Development</h2>
+</div>
+
+<p class="section-intro">
+Current development focuses on integrating assessment stages,
+preserving results for later correlation and improving the
+workflow between reconnaissance, technical testing and
+evidence-backed findings.
+</p>
+
+<div class="case-links">
+<a href="../investigation-correlation-platform/">← Investigation & Correlation Platform</a>
+<a href="../">All Projects →</a>
+</div>
+
+</div>
+</section>
+
+</main>
+
+
+<footer>
+<div class="container footer-content">
+
+<div>
+<strong>Philip Larussa</strong>
+<p>Technology Leadership • Cybersecurity • Engineering</p>
+</div>
+
+<div>
+<a href="../../">Home</a>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>
