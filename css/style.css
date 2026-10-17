@@ -5224,3 +5224,8 @@ h4 { margin-bottom:8px; font-size:1rem; }
 @media print { .site-header,.skip-link,.footer-links { display:none; } body,.section,.section.alt { background:white; color:black; } p,.muted { color:black!important; } }
 
 .learning-page .section-label,.learning-page .eyebrow { color:var(--learning); }
+
+/* Personal project journal identity. */
+.brand { white-space:normal; font-size:1rem; line-height:1.4; letter-spacing:.01em; padding-block:12px; }
+.brand .brand-divider { margin-inline:.2em; }
+@media (min-width:1051px) and (max-width:1300px) { .nav-container { flex-wrap:wrap; gap:0 2rem; padding-bottom:10px; } }
