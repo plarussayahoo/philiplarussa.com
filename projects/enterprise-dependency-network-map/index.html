@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enterprise Dependency &amp; Network Map | Philip Larussa</title>
+  <meta name="description" content="An enterprise dependency and network-path mapping platform connecting CMDB, application configuration, Kubernetes, DevOps, firewall and routing evidence for impact analysis.">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="./project.css">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body class="enterprise-map-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container nav-container">
+  <a class="brand" href="../../">PHILIP <span>LARUSSA</span></a>
+  <nav aria-label="Primary"><a href="../../">Home</a><a href="../../leadership/">Leadership</a><a href="../" aria-current="page">Technical</a><a href="../../experience/">Experience</a><a href="../../training/">Learning</a><a href="../../about/">About</a><a href="../../resume/">Resume</a></nav>
+</div></header>
+<main id="main">
+  <section class="em-hero"><div class="container">
+    <a class="case-back" href="../">← Technical Capability</a>
+    <div class="em-hero-grid">
+      <div>
+        <p class="eyebrow">ENTERPRISE ARCHITECTURE &amp; NETWORKING</p>
+        <h1>Enterprise Dependency <span>&amp; Network Map</span></h1>
+        <p class="em-question">What depends on what?<br>What breaks when it changes?</p>
+        <p class="em-intro">A dependency and network-path mapping platform that connects application, infrastructure and network evidence into one interactive view.</p>
+        <div class="hero-actions"><a class="button primary" href="#capabilities">Explore the platform</a><a class="button secondary" href="#workflow">How it works</a></div>
+      </div>
+      <figure class="em-map">
+        <figcaption><span>RELATIONSHIPS, MADE VISIBLE</span><span class="em-map-key"><i></i> Illustrative model</span></figcaption>
+        <svg viewBox="0 0 540 410" role="img" aria-labelledby="map-title map-desc">
+          <title id="map-title">An illustrative application dependency and network-path model</title>
+          <desc id="map-desc">A sample application depends on an internal API and database. A network branch connects a firewall policy with a route or IPsec tunnel and the database service. These are illustrative relationships and sample labels.</desc>
+          <defs><pattern id="em-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#454b40"/></pattern><marker id="em-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7" fill="none" stroke="#a8c5b1" stroke-width="1"/></marker></defs>
+          <rect width="540" height="410" fill="url(#em-dots)"/>
+          <rect x="23" y="29" width="494" height="206" rx="6" fill="none" stroke="#55584b" stroke-dasharray="5 6"/>
+          <text x="39" y="52" class="em-zone">APPLICATION &amp; INFRASTRUCTURE</text>
+          <g fill="none" stroke="#a8c5b1" stroke-width="1.5" marker-end="url(#em-arrow)">
+            <path d="M202 130H302"/><path d="M126 159V192H302"/>
+            <path d="M126 159V285"/><path d="M199 315H302"/>
+            <path d="M377 285V253H464V208"/>
+          </g>
+          <text x="230" y="118" class="em-edge">calls</text><text x="217" y="181" class="em-edge">depends on</text><text x="215" y="302" class="em-edge">routed via</text>
+          <g class="em-node em-node-primary"><rect x="50" y="100" width="152" height="59" rx="5"/><text x="67" y="122" class="em-node-kicker">APPLICATION</text><text x="67" y="143">Sample application</text></g>
+          <g class="em-node"><rect x="302" y="100" width="188" height="59" rx="5"/><text x="319" y="122" class="em-node-kicker">DEPENDENCY</text><text x="319" y="143">Internal API</text></g>
+          <g class="em-node"><rect x="302" y="172" width="188" height="43" rx="5"/><text x="319" y="199">Database service</text></g>
+          <g class="em-node"><rect x="50" y="285" width="149" height="59" rx="5"/><text x="67" y="307" class="em-node-kicker">NETWORK CONTROL</text><text x="67" y="328">Firewall policy</text></g>
+          <g class="em-node"><rect x="302" y="285" width="188" height="59" rx="5"/><text x="319" y="307" class="em-node-kicker">NETWORK PATH</text><text x="319" y="328">Route / IPsec tunnel</text></g>
+          <text x="26" y="387" class="em-edge">Dependency context + network reachability</text>
+        </svg>
+        <p>Sample labels only. A conceptual view of the relationships the platform correlates.</p>
+      </figure>
+    </div>
+    <div class="case-tech"><span>Python</span><span>Flask</span><span>Cytoscape.js</span><span>Graphviz</span><span>SQLite</span><span>Docker</span></div>
+  </div></section>
+
+  <section class="section alt"><div class="container case-container">
+    <div class="case-section-heading"><p class="section-label">01 / THE PROBLEM</p><h2>The dependency picture lives in too many places.</h2></div>
+    <div class="case-two-column"><div><p>CMDB exports describe infrastructure. Application configuration reveals service dependencies. Kubernetes, source repositories, firewall policies and routing tables each hold another part of the picture.</p><p>This platform brings those relationships together so dependency investigation and change planning can start from a connected model.</p></div><aside class="case-callout"><strong>Engineering objective</strong><p>Understand what relies on a service, how traffic reaches it, and which dependencies deserve review before a change.</p></aside></div>
+  </div></section>
+
+  <section class="section" id="capabilities"><div class="container case-container">
+    <div class="case-section-heading"><p class="section-label">02 / CONNECT THE EVIDENCE</p><h2>From system inventory to application relationships.</h2></div>
+    <div class="em-capabilities">
+      <article><span>01</span><div><h3>CMDB Dependency Mapping</h3><p>Turns CMDB exports into an application and infrastructure dependency view, showing what relies on what.</p></div></article>
+      <article><span>02</span><div><h3>Application Dependency Discovery</h3><p>Parses application configuration across source repositories to identify databases, APIs and third-party services. Dependencies are classified as in-cluster, Azure, on-premises, internet or unresolved.</p></div></article>
+      <article><span>03</span><div><h3>Kubernetes and DevOps Mapping</h3><p>Connects AKS clusters, ingress and Azure DevOps repositories into a single dependency picture.</p></div></article>
+      <article><span>04</span><div><h3>Firewall and Routing Correlation</h3><p>Walks flows through firewall policies, live routes, user-defined routes and IPsec tunnels to flag firewall bypass, blocked traffic and missing return routes.</p></div></article>
+    </div>
+  </div></section>
+
+  <section class="section alt" id="workflow"><div class="container case-container">
+    <div class="case-section-heading"><p class="section-label">03 / THE WORKFLOW</p><h2>Collect. Correlate. Explore.</h2></div>
+    <ol class="em-workflow"><li><span>01 / INPUTS</span><h3>Collect the evidence</h3><p>CMDB exports, application configuration, cluster information and network configuration.</p></li><li><span>02 / RELATIONSHIPS</span><h3>Build the model</h3><p>Connect applications, infrastructure, service dependencies and network paths.</p></li><li><span>03 / INVESTIGATION</span><h3>Ask better questions</h3><p>Explore an application, trace a flow, inspect dependencies or export a diagram.</p></li></ol>
+  </div></section>
+
+  <section class="section"><div class="container case-container">
+    <div class="case-section-heading"><p class="section-label">04 / MAKE IT USEFUL</p><h2>Investigate the relationship.<br>Understand the impact.</h2></div>
+    <div class="case-grid-3">
+      <article class="case-card"><span>IMPACT</span><h3>What breaks if this goes down?</h3><p>Investigate downstream dependencies through the graph rather than reconstructing the relationship from separate configuration files.</p></article>
+      <article class="case-card"><span>EXPLORATION</span><h3>Start broad. Drill down.</h3><p>Search, inspect zone roll-ups, drill down by application, and look up rules by IP and port.</p></article>
+      <article class="case-card"><span>EXPORT</span><h3>Take the model with you.</h3><p>Export PNG diagrams, GraphML for yEd or draw.io, and CSV for further analysis.</p></article>
+    </div>
+  </div></section>
+
+  <section class="section alt"><div class="container case-container">
+    <div class="case-section-heading"><p class="section-label">05 / THE OPERATING MODEL</p><h2>Read-only collection. Local execution.</h2></div>
+    <div class="em-capabilities">
+      <article><span>01</span><div><h3>Queryable Data Store</h3><p>Publishes results to SQLite through a read-only API, with an optional Neo4j graph load for Bloom exploration.</p></div></article>
+      <article><span>02</span><div><h3>Read-Only and Local</h3><p>Works from exports and read-only queries. The platform runs locally in Docker, keeping assessment data in the local environment.</p></div></article>
+      <article><span>03</span><div><h3>Refresh Detection</h3><p>Detects changed inputs and re-runs only the affected pipelines.</p></div></article>
+    </div>
+    <p class="em-stack"><strong>Built with</strong> Python · Flask · Graphviz · Cytoscape.js · SQLite · Neo4j · Docker · Azure CLI / kubectl · Firewall and routing analysis</p>
+  </div></section>
+
+  <section class="section"><div class="container case-container">
+    <div class="case-two-column"><div><p class="section-label">ENGINEERING OWNERSHIP</p><h2>Built with AI assistance.<br>Directed by engineering judgment.</h2><p>Designed and iterated with an AI coding assistant. Requirements, validation against real configurations, and architecture decisions remained my responsibility.</p></div><aside class="case-callout"><strong>Connected to leadership</strong><p>Dependency visibility supports the questions behind change planning: what is affected, which services need coordination, and where should teams focus validation?</p><a class="text-link" href="../../leadership/#planning">Strategy &amp; delivery →</a></aside></div>
+    <div class="case-links"><a href="../pcap-analyzer/">← PCAP Analyzer</a><a href="../kubernetes-operations-console/">Kubernetes Operations Console →</a></div>
+  </div></section>
+</main>
+<footer><div class="container footer-content"><div><strong>Philip Larussa</strong><p>Technology Leadership • Cybersecurity • Engineering</p></div><div><a href="../../">Home</a></div></div><div class="container footer-links"><a href="../../skills/">Skills &amp; evidence</a><a href="../../military/">Military service</a><a href="../../resume/">Resume</a></div></footer>
+</body>
+</html>
